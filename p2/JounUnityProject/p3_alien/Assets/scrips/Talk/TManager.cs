@@ -5,16 +5,17 @@ using UnityEngine.UI;
 
 public class TManager : MonoBehaviour
 {
-    public EIText_ EItext;
-    public List<EIText_> listTest = new List<EIText_>();
-    public int vraagje;
+    public EIText_ eIText;
+    public UIM_Talk uim_talk;
+    public int i; 
 
 
-    public void klik()
-    {
+    // intberekennen
+    //void, int ,berekening, haalt op, doorstuuren
+    public void Oproep (int i)
+        {
+        eIText.Ja(i);
+        }
 
-    }
 }
-        
-         
 

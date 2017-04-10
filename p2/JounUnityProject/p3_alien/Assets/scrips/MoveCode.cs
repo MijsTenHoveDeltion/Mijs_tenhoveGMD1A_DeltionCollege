@@ -10,11 +10,12 @@ public class MoveCode : MonoBehaviour
     private Transform owntransform;
 	public float minsensitivity = 30f;
 	public float maxsensitivity = 60f;
+   
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
-        //Cursor.lockState = CursorLockMode.Confined;
+        Cursor.lockState = CursorLockMode.Confined;
         owntransform = gameObject.transform;
              
 		
@@ -30,10 +31,11 @@ public class MoveCode : MonoBehaviour
         mainCam.transform.Rotate(-roUpDown, 0, 0);
  
         //move
+        // same goose for jump
         float xspeed = Input.GetAxis("Horizontal") * speed;
         float yspeed = Input.GetAxis("Vertical") * speed;
         Vector3 fast = new Vector3(xspeed, 0, yspeed);
-        transform.Rotate(0, xspeed, 0);
+        transform.Translate(xspeed, 0, 0);
         transform.Translate(0, 0, yspeed);
     }
 }

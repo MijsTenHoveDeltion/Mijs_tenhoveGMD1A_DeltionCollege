@@ -7,11 +7,17 @@ using System;
 public class EIText_ : MonoBehaviour
 {
     public List<string> vraagTest = new List<string>();
+    public List<string> antwoordTest = new List<string>();
 
-    static void Vraag()
+    public void Ja (int i)
     {
-
+        //antwoordTest[i]
     }
+
+
+
+
+    
 }
 
    
