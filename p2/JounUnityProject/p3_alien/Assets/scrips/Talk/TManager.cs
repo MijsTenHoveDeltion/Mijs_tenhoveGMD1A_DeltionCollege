@@ -12,10 +12,14 @@ public class TManager : MonoBehaviour
 
     // intberekennen
     //void, int ,berekening, haalt op, doorstuuren
-    public void Oproep (int i)
+    public void OproepJa (int i)
         {
-        eIText.Ja(i);
+        eIText.TJa(i);
         }
+    public void Oproepvraag()
+    {
+
+    }
 
 }
 

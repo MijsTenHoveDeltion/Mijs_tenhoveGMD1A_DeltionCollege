@@ -9,29 +9,47 @@ public class UIM_Talk : MonoBehaviour
    public TManager tM;
     public Canvas canvasText;
     public GameObject praat;
-    public Button jaa;
-    public Button neee;
+    public Text jaa;
+    public Text neee;
+    
 
 
     public void Start()
     {
-        canvasText.enabled = false;
 
+        canvasText.enabled = false;
     }
 
 
-    void Update()
+    public void Canvasklije(GameObject alien)
     {
-        if (Input.GetMouseButtonDown(0) && praat.tag == "Alien")
+       
+        if (alien.gameObject.tag == ("Alien"))
         {
             canvasText.enabled = true;
         }
 
     }
 
-    public void Antwoord()
+    public void AntwoordJa()
     {
-        tM.Oproep(1);
+        tM.OproepJa(1);
+    }
+
+    public void AntwoordNee()
+    {
+       // tM.Oproepvraag(2);
+    }
+
+    public void ChangeButton(string buttonOne, string buttonTwo)
+    {
+        jaa.text = buttonOne;
+        neee.text = buttonTwo;
+        print("hh");
+    }
+    public void ChangeVraag()
+    {
+
     }
         
           
