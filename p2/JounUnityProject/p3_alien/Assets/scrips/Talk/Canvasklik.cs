@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Canvasklik : MonoBehaviour {
     public UIM_Talk uimt;
+    
 
     void OnMouseDown()
     {

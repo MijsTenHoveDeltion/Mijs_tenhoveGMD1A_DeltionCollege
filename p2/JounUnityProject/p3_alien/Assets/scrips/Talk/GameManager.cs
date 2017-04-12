@@ -4,12 +4,12 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour {
 
-    public Animator anime;
+   
 
 	
 	void Start ()
     {
-        anime.SetBool("loop", true);
+        
 	}
 	
 
