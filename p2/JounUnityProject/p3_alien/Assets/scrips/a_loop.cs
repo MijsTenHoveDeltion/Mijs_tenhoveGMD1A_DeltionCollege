@@ -17,28 +17,38 @@ public class a_loop : MonoBehaviour
         stLoop = true;
         tv = go.transform;
     }
-	
-	void Update ()
+
+    void Update()
     {
-        if (stLoop == true )
         {
-            transform.position = Vector3.MoveTowards(transform.position, (new Vector3(-4, 0.6f, -2)),f);	
+            if (stLoop == true)
+            {
+                transform.position = Vector3.MoveTowards(transform.position, (new Vector3(-4, 0.6f, -2)), f);
+            }
+            if (transform.position == (new Vector3(-4, 0.6f, -2)))
+            {
+                //  tv.Rotate(new Vector3(90,90, 20),Time.deltaTime);
+                // transform.rotation = Vector3.MoveTowards(transform.rotation (new Vector3(0, 90, 0 )));
+                //  transform.Rotate(new Vector3(0, 30, 0) * Time.deltaTime);
+                 transform.position = Vector3.MoveTowards(transform.position, (new Vector3(0, 90, 0)), Time.deltaTime * f2);
+                // if ( transform.rotation => (new Vector3(0, 90 ,0)))
+                print("h");
+                transform.position = Vector3.MoveTowards(transform.position, (new Vector3(4, 0.6f, -2)), f);
+            }
         }
-        if (transform.position == (new Vector3(-4, 0.6f, -2)))
-        {
-            //  tv.Rotate(new Vector3(90,90, 20),Time.deltaTime);
-            // transform.rotation = Vector3.MoveTowards(transform.rotation (new Vector3(0, 0, 0 )));
-            //transform.Rotate(new Vector3(0, 30, 0) * Time.deltaTime);
-            transform.position = Vector3.MoveTowards(transform.position, (new Vector3(0, 30, 0)), Time.deltaTime * f2);
-            //if ( transform.rotation > (new Vector3(0, 90 ,0)))
-            // {
+    }
+
+            //   if (transform.position == (new Vector3(-4, 0.6f, -2)))
+            //   {
+
+            //   }
+
 
             //  }
-        }
-       
-	}
-    public void StopAnimatie ()
-    {
-        stLoop = false;
+            //  public void StopAnimatie ()
+            //  {
+            //    stLoop = false;
+            //  }
+        //}
     }
-}
+       

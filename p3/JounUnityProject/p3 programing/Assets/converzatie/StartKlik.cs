@@ -6,20 +6,27 @@ using UnityEngine.UI;
 public class StartKlik : MonoBehaviour
 {
     public Canvas canvas;
-    public Text text;
-    public GameObject man;
+    public Button ja;
+    public Button nee;
+    public Text textJa;
+    public Text textnee;
 
-	void Start ()
-    {
-        canvas.enabled = false;
-	}
-	
-    public void CanvasPopUp( GameObject mannen)
-    {
-        if (mannen.gameObject.tag == ("mann"))
-        {
-            canvas.enabled = true;
+
+
+
+    // timer in forloop met time.deltatime
+
+    void OnMouseDown ()
+            {
+        print("fack");
+
+            if (ja.tag == ("1"))
+            {
+                print("t1");
+            }
+
         }
+
     }
-	
-}
+
+

@@ -21,7 +21,7 @@ public class EIText_ : MonoBehaviour
     {
         print("ho");
      //   uimt.ChangeVraag(vraagTest[i]);
-     //   TMM.Oproepvraag((i)vraagTest[i]);
+      //  TMM.Oproepvraag((i)vraagTest[i]);
     }
 
 }

@@ -33,22 +33,23 @@ public class UIM_Talk : MonoBehaviour
         }
     }
 
-    public void AntwoordJa( int ja1)
+    public void AntwoordJa( int i)
     {
-        tM.OproepJa(ja1);
-      tM.Oproepvraag(ja1);
-        
+      tM.OproepJa(i);
+      tM.Oproepvraag(i);
+        print("one");
     }
 
     public void ChangeButton(string buttonOne, string buttonTwo )
     {
-
+        print("too");
         jaa.text = buttonOne;
         neee.text = buttonTwo;
     }
     public void aaa (string antwor)
     {
         antwoord.text = antwor;
+        print("tree");
     }
 
 
