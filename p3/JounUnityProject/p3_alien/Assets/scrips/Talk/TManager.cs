@@ -7,26 +7,16 @@ public class TManager : MonoBehaviour
 {
     public EIText_ eIText;
     public UIM_Talk uim_talk;
-    public int i;
-    public int ix = 2;
+    public int ipos;
+   
+    
 
-
-    // intberekennen
-    //void, int ,berekening, haalt op, doorstuuren
-    public void OproepJa (int i)
+    public void Doorturen(int i)
     {
-        print("da");
-        eIText.TJa(i * ix);
-       uim_talk.aaa("antwor");
+        uim_talk.TextTerug(eIText.vraag[ipos += i]);
     }
-    public void Oproepvraag(int i)
-    {
-        print("ka");
-        eIText.Antw(i * ix);
-    }
-        
-
 }
+
 
 
 

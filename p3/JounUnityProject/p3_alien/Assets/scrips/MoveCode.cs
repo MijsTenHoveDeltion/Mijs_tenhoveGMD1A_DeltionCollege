@@ -29,9 +29,8 @@ public class MoveCode : MonoBehaviour
         float roUpDown = Input.GetAxis("Mouse Y");
         owntransform.Rotate (new Vector3(0 , roLeftRight,0));
         mainCam.transform.Rotate(-roUpDown, 0, 0);
- 
+
         //move
-        // same goose for jump
         float xspeed = Input.GetAxis("Horizontal") * speed;
         float yspeed = Input.GetAxis("Vertical") * speed;
         Vector3 fast = new Vector3(xspeed, 0, yspeed);
