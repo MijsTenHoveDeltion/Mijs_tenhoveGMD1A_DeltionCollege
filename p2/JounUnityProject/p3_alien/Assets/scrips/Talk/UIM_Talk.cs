@@ -10,14 +10,12 @@ public class UIM_Talk : MonoBehaviour
     public Canvas canvasText;
     public GameObject praat;
     public GameObject waterpraat;
-    public a_loop ani;
     public Text aiVraag;
 
     
 
     public void Start()
     {
-
         canvasText.enabled = false;
     }
     public void Canvasklije(GameObject TalkObject)
@@ -31,16 +29,12 @@ public class UIM_Talk : MonoBehaviour
         if (TalkObject.gameObject.tag == ("water"))
         {
             canvasText.enabled = true;
-      //      ButtonKlik.(i += 10);
-        //       ani.StopAnimatie.stloop = true;
         }
-
     }
 
 
     public void ButtonKlik(int i)
     {
-        print("l");
         tM.Doorturen(i);   
     }
 
@@ -51,8 +45,6 @@ public class UIM_Talk : MonoBehaviour
         {
             canvasText.enabled = false;
         }
-        
-
     }
 }
 
