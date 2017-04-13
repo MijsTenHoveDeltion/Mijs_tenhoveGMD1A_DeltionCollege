@@ -8,7 +8,7 @@ public class TManager : MonoBehaviour
     public EIText_ eIText;
     public UIM_Talk uim_talk;
     public int ipos;
-    public GameObject water;
+   
     
 
     public void Doorturen(int i)

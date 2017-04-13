@@ -9,7 +9,7 @@ public class UIM_Talk : MonoBehaviour
     public TManager tM;
     public Canvas canvasText;
     public GameObject praat;
-    public GameObject waterpraat;
+ // public GameObject waterpraat;
     public Text aiVraag;
 
     
@@ -20,16 +20,8 @@ public class UIM_Talk : MonoBehaviour
     }
     public void Canvasklije(GameObject TalkObject)
     {
-
-        if (TalkObject.gameObject.tag == ("Alien"))
-        {
-            canvasText.enabled = true;
-            
-        }
-        if (TalkObject.gameObject.tag == ("water"))
-        {
-            canvasText.enabled = true;
-        }
+        canvasText.enabled = true;
+        tM.ipos = 0;   
     }
 
 
@@ -44,6 +36,7 @@ public class UIM_Talk : MonoBehaviour
         if (vraag == "...")
         {
             canvasText.enabled = false;
+            
         }
     }
 }
