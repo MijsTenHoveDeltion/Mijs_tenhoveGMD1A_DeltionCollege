@@ -9,5 +9,6 @@ public class Canvasklik : MonoBehaviour {
     void OnMouseDown()
     {
         uimt.Canvasklije(gameObject);
+        
     }
 }

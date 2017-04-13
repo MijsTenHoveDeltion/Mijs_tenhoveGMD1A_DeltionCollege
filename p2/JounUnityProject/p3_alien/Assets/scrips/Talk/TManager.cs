@@ -7,26 +7,23 @@ public class TManager : MonoBehaviour
 {
     public EIText_ eIText;
     public UIM_Talk uim_talk;
-    public int i;
-    public int ix = 2;
+    public int ipos;
+    public GameObject water;
+    public int gesprek2;
 
-
-    // intberekennen
-    //void, int ,berekening, haalt op, doorstuuren
-    public void OproepJa (int i)
+    public void Doorturen(int i)
     {
-        print("da");
-        eIText.TJa(i * ix);
-       uim_talk.aaa("antwor");
-    }
-    public void Oproepvraag(int i)
-    {
-        print("ka");
-        eIText.Antw(i * ix);
-    }
-        
+        print("kay");
+        // ipos += gesprek2; 
+      
+        uim_talk.TextTerug(eIText.vraag[ipos += i]);
+       
 
+
+
+    }
 }
+
 
 
 

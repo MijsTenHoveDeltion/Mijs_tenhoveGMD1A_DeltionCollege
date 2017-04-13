@@ -6,15 +6,13 @@ using UnityEngine.UI;
 
 public class UIM_Talk : MonoBehaviour
 { 
-   public TManager tM;
+    public TManager tM;
     public Canvas canvasText;
     public GameObject praat;
+    public GameObject waterpraat;
     public a_loop ani;
-    public Text jaa;
-    public Text neee;
-    public Text antwoord;
-    public int ja1;
-    public int nee2;
+    public Text aiVraag;
+
     
 
     public void Start()
@@ -22,40 +20,40 @@ public class UIM_Talk : MonoBehaviour
 
         canvasText.enabled = false;
     }
-    public void Canvasklije(GameObject alien)
+    public void Canvasklije(GameObject TalkObject)
     {
-        if (alien.gameObject.tag == ("Alien"))
+
+        if (TalkObject.gameObject.tag == ("Alien"))
         {
             canvasText.enabled = true;
-
-
-         //   ani.StopAnimatie.(stloop = true);
+            
         }
+        if (TalkObject.gameObject.tag == ("water"))
+        {
+            canvasText.enabled = true;
+      //      ButtonKlik.(i += 10);
+        //       ani.StopAnimatie.stloop = true;
+        }
+
     }
 
-    public void AntwoordJa( int i)
+
+    public void ButtonKlik(int i)
     {
-      tM.OproepJa(i);
-      tM.Oproepvraag(i);
-        print("one");
+        print("l");
+        tM.Doorturen(i);   
     }
 
-    public void ChangeButton(string buttonOne, string buttonTwo )
+    public void TextTerug(string vraag)
     {
-        print("too");
-        jaa.text = buttonOne;
-        neee.text = buttonTwo;
-    }
-    public void aaa (string antwor)
-    {
-        antwoord.text = antwor;
-        print("tree");
-    }
+        aiVraag.text = vraag;
+        if (vraag == "...")
+        {
+            canvasText.enabled = false;
+        }
+        
 
-
-        // int/punten
-        //knoplingke/ je antwoord Ja/Nee
-        // aan de TM de TM stuurt naar de EIText_
+    }
 }
 
 

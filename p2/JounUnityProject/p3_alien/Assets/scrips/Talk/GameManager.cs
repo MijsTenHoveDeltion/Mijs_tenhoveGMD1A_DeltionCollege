@@ -13,22 +13,25 @@ public class GameManager : MonoBehaviour
 
 
 
-    void Start()
+    /*void Awake()
     {
-        startmenu = startmenu.GetComponent<Canvas>();
-        startBut = startBut.GetComponent<Button>();
-        startmenu.enabled = false;
+        start.Enabled = false;
     }
 
 
-  public void startpress()
+  public void StartStart()
     {
-        startmenu.enabled = true;
-
+            start.Enabled = true;
     }
+
+    public void klaar()
+    {
+        start.Enabled = false;
+    } 
+
    
-    public void startlevel()
+    public void startlevel(string (1))
     {
-        Application.LoadLevel(1);
-    }
+        Application.LoadLevel("1");
+    }*/
 }
