@@ -12,6 +12,7 @@ public class InventoryAanUit : MonoBehaviour {
 		inventory.enabled = false;
 		invOn = false;
 	}
+
 	void Update ()
 	{
 		if (Input.GetButtonDown("E") && invOn == false)
@@ -25,7 +26,5 @@ public class InventoryAanUit : MonoBehaviour {
 			inventory.enabled = false;
 			invOn = false;
 		}
-	}
-	
-	
+	}	
 }

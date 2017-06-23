@@ -11,9 +11,6 @@ public class Slot : MonoBehaviour
 	public Image imageDrag;
 	public GameObject followIm;
 	public GameObject onOf;
-	public GameObject textObject;
-	public ListImage listImag;
-	
 	
 	public void Start()
 	{
@@ -28,12 +25,12 @@ public class Slot : MonoBehaviour
 			transform.position = Input.mousePosition;
 		}
 	}
+
 	public void Klikken()
 	{
 		if (image1.GetComponent<Image>().sprite == null)
 		{
 			image1.GetComponent<Image>().sprite = imageDrag.sprite;
-			listImag.plaatjes.Add(item);
 			imageDrag.sprite = null;
 			onOf.SetActive(false);
 		}
@@ -59,7 +56,6 @@ public class Slot : MonoBehaviour
 			imageDrag.sprite = image1.sprite;
 			image1.sprite = null;
 			onOf.SetActive(true);
-			//listImag.plaatjes.Remove(listImag.plaatjes[listImag.plaatjes.Count - 1]);
 		}
 	}
 
@@ -67,11 +63,14 @@ public class Slot : MonoBehaviour
 	{
 		if (image1.GetComponent<Image>().sprite == null)
 		{
+			Slot test = image1.GetComponent<Slot>();
+			Slot test2 = imageDrag.GetComponent<Slot>();
+			test.item = test2.item;
+
 			image1.GetComponent<Image>().sprite = imageDrag.sprite;
-			listImag.plaatjes.Add(item);
 			imageDrag.sprite = null;
+			imageDrag.GetComponent<Slot>().item = null;
 			onOf.SetActive(false);
-		
 		}
 	}
 }

@@ -7,9 +7,6 @@ public class Item : MonoBehaviour
 {
 	public string stringetje;
 	public Text textI;
-	public Image controle;
-	public Image plaatje;
-	public bool aan;
 	public Sprite sprite;
 	
 }
