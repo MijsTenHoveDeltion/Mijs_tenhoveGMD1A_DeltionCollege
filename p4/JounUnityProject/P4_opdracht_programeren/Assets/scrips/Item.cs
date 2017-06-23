@@ -5,9 +5,11 @@ using UnityEngine.UI;
 
 public class Item : MonoBehaviour
 {
-	public Text text;
-	public Image image;
+	public string stringetje;
+	public Text textI;
 	public Image controle;
-	public Sprite plaatje;
+	public Image plaatje;
 	public bool aan;
+	public Sprite sprite;
+	
 }

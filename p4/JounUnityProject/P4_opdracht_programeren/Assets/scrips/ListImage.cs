@@ -4,5 +4,5 @@ using UnityEngine;
 
 public class ListImage : MonoBehaviour
 {
-	public List<Sprite> plaatjes = new List<Sprite>();
+	public List<Item> plaatjes = new List<Item>();
 }
