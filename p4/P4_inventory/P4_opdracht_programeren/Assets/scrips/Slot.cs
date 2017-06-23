@@ -53,6 +53,7 @@ public class Slot : MonoBehaviour
 	{
 		if (image1.GetComponent<Image>().sprite != null)
 		{
+			imageDrag.GetComponent<Slot>().item = item;
 			imageDrag.sprite = image1.sprite;
 			image1.sprite = null;
 			onOf.SetActive(true);
@@ -66,7 +67,6 @@ public class Slot : MonoBehaviour
 			Slot test = image1.GetComponent<Slot>();
 			Slot test2 = imageDrag.GetComponent<Slot>();
 			test.item = test2.item;
-
 			image1.GetComponent<Image>().sprite = imageDrag.sprite;
 			imageDrag.sprite = null;
 			imageDrag.GetComponent<Slot>().item = null;
