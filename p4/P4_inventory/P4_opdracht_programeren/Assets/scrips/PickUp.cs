@@ -16,7 +16,6 @@ public class PickUp : MonoBehaviour
 		imagePU.GetComponent<Image>().sprite = gm;
 		gm = itemS.sprite;
 		textPU = itemS.textI;
-
 	}
 
 	public void Dragg()
@@ -29,6 +28,4 @@ public class PickUp : MonoBehaviour
 			slot.onOf.SetActive(true);
 		}
 	}
-
-
 }

@@ -2,8 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class InventoryAanUit : MonoBehaviour {
-
+public class InventoryAanUit : MonoBehaviour
+{
 	public Canvas inventory;
 	public bool invOn;
 

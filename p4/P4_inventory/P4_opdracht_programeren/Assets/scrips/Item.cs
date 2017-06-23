@@ -7,6 +7,5 @@ public class Item : MonoBehaviour
 {
 	public string stringetje;
 	public Text textI;
-	public Sprite sprite;
-	
+	public Sprite sprite;	
 }
