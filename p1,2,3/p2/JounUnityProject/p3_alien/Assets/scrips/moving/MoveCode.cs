@@ -25,9 +25,9 @@ public class MoveCode : MonoBehaviour
 	void FixedUpdate ()
     {
         //rotatie
-        float roLeftRight  = Input.GetAxis("Mouse X") * lookfast * Time.deltaTime;
-        float roUpDown = Input.GetAxis("Mouse Y");
-        owntransform.Rotate (new Vector3(0 , roLeftRight,0));
+        float roLeftRight  = Input.GetAxis("Mouse Y") * lookfast * Time.deltaTime;
+        float roUpDown = Input.GetAxis("Mouse X");
+        owntransform.Rotate (new Vector3(roLeftRight ,0 ,0));
         mainCam.transform.Rotate(-roUpDown, 0, 0);
 
         //move
