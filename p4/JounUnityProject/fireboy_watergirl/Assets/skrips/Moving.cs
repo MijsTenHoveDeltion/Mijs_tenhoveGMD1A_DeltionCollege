@@ -4,47 +4,51 @@ using UnityEngine;
 
 public class Moving : MonoBehaviour
 {
+	public Camera cam;
 	public float speed;
 	public float jumpRange;
-	public bool jumping;
+	public bool onGround;
 	public GameObject gm;
+	public Rigidbody rbPlayer;
+	
 
 	public void Start()
 	{
-		jumping = false;
+		rbPlayer = GetComponent<Rigidbody>();
+		onGround = true;
 	}
 
 	public void Update ()
 	{
-		Debug.DrawRay(transform.position, -transform.up * 100, Color.red);
-		RaycastHit hit;
-		Ray jumpRay = new Ray(transform.position, Vector3.down); 
-
 		float speedH = Input.GetAxis("Horizontal") * speed;
 		transform.Translate(speedH,0.0f, 0.0f );
 
-		if  (jumping == true&&Physics.Raycast(jumpRay, out hit, jumpRange))
-		{
-			print("c");
-			float speedUp = Input.GetAxis("Vertical") * speed;
-			transform.Translate(0.0f, speedUp,0.0f );
-		}
-		
-			
-	}
-	public void OnCollisionEnter(Collision collision)
-	{
-		if (collision.gameObject.CompareTag("floor"))
-		{
-			print("a"); 
-			jumping = true;
-		}
-		else
-		{
-			print("b");
-			jumping = false;
+		if  (Input.GetButtonDown("Jump") && onGround == true)
+		{	
+			rbPlayer.velocity += new Vector3(0, jumpRange, 0);
+			onGround = false;
 		}
 
+		if (Input.GetButton("Fire1"))
+		{
+			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hit;
+
+			if (Physics.Raycast(ray, out hit))
+			{
+				Vector3 pos = hit.point;
+				gm.transform.position = (new Vector3(pos.x ,pos.y,-5));
+			}
+		}
+	}
+
+	public void OnCollisionEnter(Collision collision)
+	{
+		if (collision.transform.position.y < transform.position.y)
+		{
+			
+			onGround = true;
+		}
 	}
 
 

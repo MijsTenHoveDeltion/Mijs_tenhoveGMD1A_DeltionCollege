@@ -1,23 +1,26 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
-public class PickUP : MonoBehaviour {
+public class PickUP : MonoBehaviour
+{
+	public Scene scene;
 
-	public bool boletje;
-	public GameObject gm;
-	private void Start()
+	public void Start()
 	{
-		boletje = true;
+		scene = SceneManager.GetActiveScene();
 	}
-
 
 	void OnTriggerEnter(Collider other)
 	{
-		if (other.gm)
+		if (other.gameObject.CompareTag("Pick Up"))
 		{
-			boletje = false;
-			//other.gameObject.SetActive(false);
+			
+			other.gameObject.SetActive(false);
+
+			Application.LoadLevel(Application.loadedLevel);
+
 		}
 	}
 }
