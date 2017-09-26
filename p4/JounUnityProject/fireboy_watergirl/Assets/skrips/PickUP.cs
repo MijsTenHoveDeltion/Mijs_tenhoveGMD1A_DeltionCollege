@@ -6,6 +6,8 @@ using UnityEngine.SceneManagement;
 public class PickUP : MonoBehaviour
 {
 	public Scene scene;
+	public GameObject gm2;
+	public Camera mCam;
 
 	public void Start()
 	{
@@ -16,11 +18,20 @@ public class PickUP : MonoBehaviour
 	{
 		if (other.gameObject.CompareTag("Pick Up"))
 		{
-			
-			other.gameObject.SetActive(false);
-
 			Application.LoadLevel(Application.loadedLevel);
+			
+		}
 
+		if (other.gameObject.CompareTag("Level2"))
+		{
+			
+			gm2.transform.position = new Vector3(10f, -1.88f, -2.8f);
+			mCam.transform.position = new Vector3(10f, 1.0f, -11.5f);
+		}
+		if (other.gameObject.CompareTag("Level3"))
+		{
+			gm2.transform.position = new Vector3(20f, -1.88f, -2.8f);
+			//mCam.transform.position = new Vector3(-8f, 1.0f, -11.5f);
 		}
 	}
 }

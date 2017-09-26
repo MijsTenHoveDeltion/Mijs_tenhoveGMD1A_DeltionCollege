@@ -5,22 +5,26 @@ using System.Linq;
 
 public class Laagnummer : MonoBehaviour
 {
-	public List<int> ListInt = new List<int>();
-	public List<int> ListInt2 = new List<int>();
-
-	public void Start()
+	public List<int> SortList(List<int> toSort)
 	{
-		ListInt = GetLowestNumber(ListInt2);
-	}
+		List<int> toReturn = new List<int>();
+		int lowest = int.MaxValue;
+		int index = 0;
 
-	public void GetLowestNumber(List<int> inde)
-	{
-		for (int i = 0; i < inde.Count; i++)
+		while (toSort.Count > 0)
 		{
-
-			//andere for om te tjeken wat het laagste nummer is
+			lowest = int.MaxValue;
+			for (int i = 0; i < toSort.Count; i++)
+			{
+				if (toSort[i] <= lowest)
+				{
+					lowest = toSort[i];
+					index = i;
+				}
+			}
+			toReturn.Add(lowest);
 			
+			toSort.RemoveAt(index);
 		}
 	}
-	
 }
