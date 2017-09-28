@@ -29,24 +29,23 @@ public class Moving : MonoBehaviour
 			onGround = false;
 		}
 
-		if (Input.GetButton("Fire1"))
-		{
+		//if (Input.GetButton("Fire1"))
+		//{
 			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
 			RaycastHit hit;
 
 			if (Physics.Raycast(ray, out hit))
 			{
 				Vector3 pos = hit.point;
-				gm.transform.position = (new Vector3(pos.x ,pos.y,-5));
+				gm.transform.position = (new Vector3(pos.x ,pos.y,-6));
 			}
-		}
+		//}
 	}
 
 	public void OnCollisionEnter(Collision collision)
 	{
 		if (collision.transform.position.y < transform.position.y)
-		{
-			
+		{	
 			onGround = true;
 		}
 	}
