@@ -3631,11 +3631,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   particalPosision:
-  - {x: NaN, y: 0, z: 12.047411}
-  - {x: NaN, y: 0, z: 12.047411}
-  - {x: NaN, y: 0, z: 12.047411}
-  - {x: NaN, y: 0, z: 12.047411}
-  - {x: NaN, y: 0, z: 12.047411}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
+  - {x: 0, y: 0, z: 0}
   pSystem: {fileID: 0}
   lineRender: {fileID: 1609458313}
   gm: {fileID: 0}
@@ -3643,7 +3648,8 @@ MonoBehaviour:
   startLife: 1
   startsize: 0.5
   maxDistence: 1
-  proefInt: 5
+  sizeList: 0
+  pcount: 0
 --- !u!4 &1609458312
 Transform:
   m_ObjectHideFlags: 0
@@ -3670,7 +3676,7 @@ LineRenderer:
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 10756, guid: 0000000000000000e000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3685,7 +3691,7 @@ LineRenderer:
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
+  m_LightmapParameters: {fileID: 15201, guid: 0000000000000000f000000000000000, type: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -3706,7 +3712,7 @@ LineRenderer:
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-      m_RotationOrder: 4
+      m_RotationOrder: 0
     colorGradient:
       serializedVersion: 2
       key0: {r: 1, g: 1, b: 1, a: 1}
