@@ -9,6 +9,7 @@ public class Moving : MonoBehaviour
 	public float jumpRange;
 	public bool onGround;
 	public GameObject gm;
+	public GameObject ob;
 	public Rigidbody rbPlayer;
 	
 
@@ -29,17 +30,18 @@ public class Moving : MonoBehaviour
 			onGround = false;
 		}
 
-		//if (Input.GetButton("Fire1"))
-		//{
-			Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-			RaycastHit hit;
+		Ray rays = cam.ScreenPointToRay(Input.mousePosition);
+			RaycastHit hiting;
 
-			if (Physics.Raycast(ray, out hit))
-			{
-				Vector3 pos = hit.point;
-				gm.transform.position = (new Vector3(pos.x ,pos.y,-6));
-			}
-		//}
+
+		if (Physics.Raycast(rays, out hiting))
+		{
+				Vector3 pos = hiting.point;
+
+			gm.transform.position = (new Vector3(pos.x, pos.y, -6));
+			ob.transform.position = (new Vector3(pos.x, pos.y, -6));
+
+		}
 	}
 
 	public void OnCollisionEnter(Collision collision)
