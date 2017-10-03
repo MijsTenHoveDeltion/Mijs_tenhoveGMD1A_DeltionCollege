@@ -5,7 +5,7 @@ using UnityEngine;
 public class Lijnen : MonoBehaviour
 {
 	public List<Vector3> particalPosision = new List<Vector3>();
-	public List<Particle> particals = new List<Particle>();
+	
 
 	public ParticleSystem pSystem;
 	ParticleSystem.Particle[] m_Particles;
@@ -24,29 +24,32 @@ public class Lijnen : MonoBehaviour
 
 	void Start()
 	{
-		sizeList = particalPosision.Count;
-		sizeList = maxPart;
-		print("c");
 		Material particleMaterial = new Material(Shader.Find("Particles/Alpha Blended Premultiply"));
 		gm = new GameObject("Particle System");
 		gm.transform.Rotate(-90, 0, 0);
 		pSystem = gm.AddComponent<ParticleSystem>();
 		gm.GetComponent<ParticleSystemRenderer>().material = particleMaterial;
-		
+
 		// m_particle moet een gm hebbben 
 
 		var mainModule = pSystem.main;
+
 		mainModule.startColor = Color.blue;
 		mainModule.startSize = startsize;
 		mainModule.maxParticles = maxPart;
 		mainModule.startLifetime = startLife;
-
+		
+		if (m_Particles == null || m_Particles.Length < maxPart)
+		{
+			m_Particles = new ParticleSystem.Particle[maxPart];
+			print("c");
+		}
 		
 
 		var sh = pSystem.shape;
 		sh.shapeType = ParticleSystemShapeType.Sphere;
-		//maxPart = mainModule.maxParticles;
 	}
+
 	public void Update()
 	{
 
@@ -58,36 +61,27 @@ public class Lijnen : MonoBehaviour
 		{
 			print(m_Particles[pcount]);
 			print("a");
-			if (maxPart > 0 && m_Particles[pcount].position != null)
+				if (maxPart > 0 && m_Particles[pcount].position != null)
 			{
-				
+				//m_Particles[maxPart].position = new Vector3(
 				particalPosision.Add(m_Particles[pcount].position);
-				//print(pSystem.particleCount);
+				print(pSystem.particleCount);
 			}
-			//pcount = i;
+			if (sizeList > 10 && startLife)
+			{
+				particalPosision.
+			}
 			
-			//if (m_Particles[0]. != null)
+
+			//pcount = i;
+			//if (m_Particles[maxPart] != null)
 			//{
 			//Vector3 iets = m_Particles[maxPart].position;
 			//}
 		}
 	}
-
-
-
-
-
-
-
-	//Vector3 iets = m_Particles[0].position;
-	//print(iets);
 }
-// maak list met particals en elkekeer als er een partelcel te voorschijn komt dan zet hij het in de lis en als hij verdwijnt gaat hij uit de list 
-// for doorde list voor de pozietie 
-// for2 voor welke het digtst bij elkaar staan
 
 
 
-// partical.posision = ... dicht bij dan maak lijn 
-// partical systeem / partical efect
-//maxParticles
+
