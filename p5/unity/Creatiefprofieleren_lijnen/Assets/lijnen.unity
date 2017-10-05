@@ -286,15 +286,14 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   particalPosision: []
   pSystem: {fileID: 0}
-  lineRender: {fileID: 120103862667719788, guid: abf87eda6b25a63489d85a387474b26b,
+  lineRender: {fileID: 120941210256918134, guid: d0b92c7400f8d6b4baddf71124cc84aa,
     type: 2}
   gm: {fileID: 0}
-  maxPart: 5
+  maxPart: 2
   startLife: 1
   startsize: 1
   maxDistence: 0
-  sizeList: 0
-  pcount: 0
+  line: 0
 --- !u!4 &1211886024
 Transform:
   m_ObjectHideFlags: 0

@@ -1,11 +1,12 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+
 using UnityEngine;
 [RequireComponent(typeof(ParticleSystem))]
 
 public class CopyRide : MonoBehaviour
 {
-	/*
+	/**/
 	public float maxDistance = 1.0f;
 
 	public int maxConnections = 5;
