@@ -6,7 +6,7 @@ using UnityEngine;
 
 public class CopyRide : MonoBehaviour
 {
-	/**/
+	/*
 	public float maxDistance = 1.0f;
 
 	public int maxConnections = 5;

@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Lijnen : MonoBehaviour
 {
-	public List<Vector3> particalPosision = new List<Vector3>();
-	List<LineRenderer> lineRenderers = new List<LineRenderer>();
+	 List<Vector3> particalPosision = new List<Vector3>();
+	
+	//List<LineRenderer> lineRenderers = new List<LineRenderer>();
+
 
 	public ParticleSystem pSystem;
 	ParticleSystem.Particle[] m_Particles;
@@ -18,7 +20,7 @@ public class Lijnen : MonoBehaviour
 	public float maxDistence;
 
 	public int line;
-	int pcount;
+	public int pcount;
 
 	void Start()
 	{
@@ -28,61 +30,69 @@ public class Lijnen : MonoBehaviour
 		gm.transform.Rotate(-90, 0, 0);
 		pSystem = gm.AddComponent<ParticleSystem>();
 		gm.GetComponent<ParticleSystemRenderer>().material = particleMaterial;
-		
+
 		var mainModule = pSystem.main;
 
 		mainModule.startColor = Color.blue;
 		mainModule.startSize = startsize;
 		mainModule.maxParticles = maxPart;
 		mainModule.startLifetime = startLife;
-		
-		if (m_Particles == null )
+
+		if (m_Particles == null)
 		{
 			m_Particles = new ParticleSystem.Particle[maxPart];
-		
+
 		}
 		//|| m_Particles.Length < maxPart
 
 		var sh = pSystem.shape;
 		sh.shapeType = ParticleSystemShapeType.Sphere;
+
 	}
 
-	public void Update()
+
+	public void LateUpdate()
 	{
+		
 		pSystem.GetParticles(m_Particles);
 		pcount = pSystem.particleCount;
-		
 
+		if (pcount < 10  )
+			{
+
+			// elker keer pcount teld er een bij op maak een list new list aan en zet daar de v3 in
+				print("h");
+			}
 		for (int i = 0; i < pcount; i++)
 		{
-
-			if (maxPart > 0 && m_Particles[i].position != new Vector3(0f,0f,0f))
+			
+			if (maxPart > 0 && m_Particles[i].position != new Vector3(0f, 0f, 0f))
 			{
-				Vector3 p1_position = m_Particles[i].position;
 
-				for (int j = 0; j < pSystem.particleCount; j++)
+				Vector3 p1_position = m_Particles[i].position;
+				particalPosision.Add(m_Particles[i].position);
+
+				for (int j = i; j < pSystem.particleCount; j++)
 				{
+					if (maxPart > 0 && m_Particles[i].position != new Vector3(0f, 0f, 0f)){}
+
 					particalPosision.Add(m_Particles[j].position);
 
-					Vector3 p2_position = m_Particles[j].position;
+						Vector3 p2_position = m_Particles[j].position;
 
-					//float dis = Vector3.SqrMagnitude(p1_position - p2_position);
-		
-					//lineRender.SetPosition(0, p1_position);
-					//lineRender.SetPosition(1, p2_position);
+						lineRender.SetPosition(0, p1_position);
+						lineRender.SetPosition(1, p2_position);
 				}
-			}
-
-
-			if (particalPosision.Count > 10)
-			{
-				//int remove = Mathf.Min(particalPosision.Count, maxPart);
-				//particalPosision.RemoveRange(0, remove);
-				particalPosision.Remove(m_Particles[i].position);
 			}
 		}
 	}
-}
+	//				
+	//	lineRender.SetPosition(1, p2_position);
+	//float dis = Vector3.SqrMagnitude(p1_position - p2_position);
+
+	}
+
+
 
 
 
