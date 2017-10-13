@@ -5,6 +5,7 @@ using UnityEngine;
 public class Lijnen : MonoBehaviour
 {
 	  List<Vector3> particalPosision = new List<Vector3>();
+	public List<LineRenderer> linerend = new List<LineRenderer>();
 
 	public ParticleSystem pSystem;
 	ParticleSystem.Particle[] m_Particles;
