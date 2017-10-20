@@ -8,31 +8,41 @@ public class Moving : MonoBehaviour
 	public float speed;
 	public float lookfast = 1.0f;
 	private Transform owntransform;
-	public float minsensitivity = 30f;
-	public float maxsensitivity = 60f;
+	//public float minsensitivity = 30f;
+	public float turn= 90f;
 
 
 	// Use this for initialization
 	void Start()
 	{
-		owntransform = gameObject.transform;
+		
 	}
 
 	// Update is called once per frame
-	void FixedUpdate()
+	void Update()
 	{
-		//rotatie
-		float roLeftRight = Input.GetAxis("Horizontal") * 90;
-		float roUpDown = Input.GetAxis("Vertical")* 90;
-		owntransform.Rotate(new Vector3( 0,0, roLeftRight));
-		gm.transform.Rotate(0, 0,-roUpDown);
 
-		//move
-		float xspeed = Input.GetAxis("Horizontal") * speed;
-		float yspeed = Input.GetAxis("Vertical") * speed;
-		Vector2 fast = new Vector2(xspeed, yspeed);
-		transform.Translate(xspeed, 0, 0);
-		transform.Translate(0, yspeed,0);
+		Vector2 fast = new Vector2(speed* Time.deltaTime, 0) ;
+		transform.Translate(speed, 0, 0);
+		
+
+		if (Input.GetKeyDown("w"))
+		{
+			gm.transform.localRotation = Quaternion.Euler(0, 0, 90);
+		}
+		if (Input.GetKeyDown("a"))
+		{
+			gm.transform.localRotation = Quaternion.Euler(0, 0, 180);
+		}
+		if (Input.GetKeyDown("s"))
+		{
+			gm.transform.localRotation = Quaternion.Euler(0, 0, -90); ;
+		}
+		if (Input.GetKeyDown("d"))
+		{
+			gm.transform.localRotation = Quaternion.Euler(0, 0, 0);
+		}
+
 	}
 }
 
