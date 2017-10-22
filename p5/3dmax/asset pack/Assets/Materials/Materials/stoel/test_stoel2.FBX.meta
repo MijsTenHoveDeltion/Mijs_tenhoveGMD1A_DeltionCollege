@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: b5f9bbabdac7f65468b41437fb5b67be
-timeCreated: 1507135358
+guid: bfe3ab19a5c569f47a22ed7fbbc571b5
+timeCreated: 1508499235
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: bloembak
-    100002: tak2
-    100004: //RootNode
-    400000: bloembak
-    400002: tak2
-    400004: //RootNode
-    2300000: bloembak
-    2300002: tak2
-    3300000: bloembak
-    3300002: tak2
-    4300000: bloembak
-    4300002: tak2
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: poten
     9500000: //RootNode
   materials:
     importMaterials: 1

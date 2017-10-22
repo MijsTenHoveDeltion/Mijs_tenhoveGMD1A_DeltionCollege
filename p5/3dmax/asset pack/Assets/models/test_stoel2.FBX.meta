@@ -1,15 +1,22 @@
 fileFormatVersion: 2
-guid: 6adabce51339fea41a69ca5a8e9d3c14
+guid: 13d3469f4c83fa34993bdbd0007167b3
 timeCreated: 1508496944
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: //RootNode
-    400000: //RootNode
-    2300000: //RootNode
-    3300000: //RootNode
-    4300000: tv
+    100000: '#chare2'
+    100002: Cylinder004
+    100004: //RootNode
+    400000: '#chare2'
+    400002: Cylinder004
+    400004: //RootNode
+    2300000: '#chare2'
+    2300002: Cylinder004
+    3300000: '#chare2'
+    3300002: Cylinder004
+    4300000: '#chare2'
+    4300002: Cylinder004
     9500000: //RootNode
   materials:
     importMaterials: 1

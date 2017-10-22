@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: c51b6f405069234458a2af7782e971d7
-timeCreated: 1506788560
+guid: 1131c23777dda9d4ca7e05dbb459d5f5
+timeCreated: 1508493978
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: '#chare2'
-    100002: Cylinder004
-    100004: //RootNode
-    400000: '#chare2'
-    400002: Cylinder004
-    400004: //RootNode
-    2300000: '#chare2'
-    2300002: Cylinder004
-    3300000: '#chare2'
-    3300002: Cylinder004
-    4300000: '#chare2'
-    4300002: Cylinder004
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: grond/plafon
     9500000: //RootNode
   materials:
     importMaterials: 1
