@@ -7,7 +7,8 @@ public class Blokje : MonoBehaviour
 	public List<GameObject> food = new List<GameObject>();
 	public List<Vector3> oldpos = new List<Vector3>();
 	public GameObject Gm;
-	public Vector3 grr; 
+	public Vector3 grr;
+	public GameObject tail;
 
 	public void Start()
 	{
@@ -21,15 +22,19 @@ public class Blokje : MonoBehaviour
 
 	public void Look()
 	{
+		print("a");
 		for (int i = 0; i < food.Count; i++)
 		{
-			print("1c");
+			oldpos.Add(Gm.transform.position);
+			print("b");
 			if (i != food.Count +1 )
 			{
-				print("ff");
-				food[i].gameObject.transform.position = oldpos[i];
-				food[i + 1].transform.position = oldpos[i];
+				
 				print("c");
+				food[i].gameObject.transform.position = tail.transform.position;
+				food[i + 1].transform.position = oldpos[i];
+				
+
 			}
 			oldpos[i] = food[i].transform.position;
 
@@ -50,7 +55,8 @@ public class Blokje : MonoBehaviour
 			float num2 = Random.Range(17, -17);
 			cube.transform.position = new Vector3(num, num2, 0);
 
-			GameObject tail = GameObject.CreatePrimitive(PrimitiveType.Cube);
+			GameObject taill = GameObject.CreatePrimitive(PrimitiveType.Cube);
+		 
 			food.Add(tail);
 			tail.transform.position = new Vector3 (0f,0f,0f);
 

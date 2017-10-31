@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 12573d76250234040bd7b29425b72d6a
-timeCreated: 1506683726
+guid: de1dedad44eda764abf47ba2031ae03a
+timeCreated: 1509115882
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: bkast
+    4300000: tv
     9500000: //RootNode
   materials:
     importMaterials: 1

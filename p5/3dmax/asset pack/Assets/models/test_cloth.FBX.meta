@@ -1,22 +1,15 @@
 fileFormatVersion: 2
-guid: 98229e12d1055694d86e889385f8c2bd
-timeCreated: 1507035875
+guid: 00e6ce9196522a84487ba5f0d42c0090
+timeCreated: 1509192835
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
   fileIDToRecycleName:
-    100000: boek
-    100002: boek_klijn
-    100004: //RootNode
-    400000: boek
-    400002: boek_klijn
-    400004: //RootNode
-    2300000: boek
-    2300002: boek_klijn
-    3300000: boek
-    3300002: boek_klijn
-    4300000: boek
-    4300002: boek_klijn
+    100000: //RootNode
+    400000: //RootNode
+    2300000: //RootNode
+    3300000: //RootNode
+    4300000: walllamp
     9500000: //RootNode
   materials:
     importMaterials: 1
