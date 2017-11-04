@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 45e84db21fc32f0488791fbf833c0e46
-timeCreated: 1509808821
+guid: 4c6f7df6d9edbac4f8bc4b60618730f1
+timeCreated: 1509808823
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: wineglas
+    4300000: glas recht
     9500000: //RootNode
   materials:
     importMaterials: 1

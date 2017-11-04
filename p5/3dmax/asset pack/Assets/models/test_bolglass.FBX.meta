@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 32b471de690dda343bbfd0b58e2d67c1
-timeCreated: 1506789660
+guid: f54d3feb93253f44ea8c9623cbc5ccdd
+timeCreated: 1509808829
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: Box001
+    4300000: glas bol
     9500000: //RootNode
   materials:
     importMaterials: 1
