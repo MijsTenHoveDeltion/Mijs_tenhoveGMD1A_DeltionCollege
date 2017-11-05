@@ -6,7 +6,7 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: muur
+  m_Name: Tavel
   m_Shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP
   m_LightmapFlags: 4
@@ -19,7 +19,7 @@ Material:
     serializedVersion: 3
     m_TexEnvs:
     - _BumpMap:
-        m_Texture: {fileID: 2800000, guid: c472d252e5770454d980cddb284d9673, type: 3}
+        m_Texture: {fileID: 2800000, guid: 6ca20698f5fa21d4bb9d0280cdaddbc4, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _DetailAlbedoMap:
@@ -39,19 +39,19 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 693f73825e2cfa84ab718a17c7ad4cea, type: 3}
+        m_Texture: {fileID: 2800000, guid: 71a3f72ebb6cdc04e8349e61bfe3f5a8, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MetallicGlossMap:
-        m_Texture: {fileID: 2800000, guid: b2c872f18c7d2cb439c2b43c5e2f3692, type: 3}
+        m_Texture: {fileID: 2800000, guid: 17974525d2bc6ed4cbec914e56924c88, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _OcclusionMap:
-        m_Texture: {fileID: 2800000, guid: 03a33c290c664be42b0d1406832aef4a, type: 3}
+        m_Texture: {fileID: 2800000, guid: f8e8acf8871ec5547a5863392e6c1999, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ParallaxMap:
-        m_Texture: {fileID: 2800000, guid: c94095f4f83a5a047be0aaf189fe0244, type: 3}
+        m_Texture: {fileID: 2800000, guid: 3cbe962571b7caf4887bf1b868852754, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     m_Floats:
@@ -64,13 +64,13 @@ Material:
     - _GlossyReflections: 1
     - _Metallic: 0
     - _Mode: 0
-    - _OcclusionStrength: 0.126
-    - _Parallax: 0.005
+    - _OcclusionStrength: 1
+    - _Parallax: 0.02
     - _SmoothnessTextureChannel: 0
     - _SpecularHighlights: 1
     - _SrcBlend: 1
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _Color: {r: 0.79525864, g: 0.9044118, b: 0.89478064, a: 1}
+    - _Color: {r: 0.9558824, g: 0.9558824, b: 0.9558824, a: 1}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
