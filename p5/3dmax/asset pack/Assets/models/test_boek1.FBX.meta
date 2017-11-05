@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: fdca9915ea41b9149bd3523b8655ea34
-timeCreated: 1509379659
+guid: 51254e8d9ba48af4abaeaab71ebf74e1
+timeCreated: 1509894205
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: boek
+    4300000: boek_klijn
     9500000: //RootNode
   materials:
     importMaterials: 1
