@@ -24,21 +24,21 @@ public class Moving : MonoBehaviour
 
 		Vector2 fast = new Vector2(speed* Time.deltaTime, 0) ;
 		transform.Translate(speed, 0, 0);
-		
 
-		if (Input.GetKeyDown("w"))
+
+		if (Input.GetKeyDown("w") && gm.transform.localRotation != Quaternion.Euler(0.0f, 0.0f, -90.0f))  //Quaternion.Euler(0,0,-90)); 
 		{
 			gm.transform.localRotation = Quaternion.Euler(0, 0, 90);
 		}
-		if (Input.GetKeyDown("a"))
+		if (Input.GetKeyDown("a") && gm.transform.localRotation != Quaternion.Euler(00.0f, 00.0f, 00.0f))
 		{
 			gm.transform.localRotation = Quaternion.Euler(0, 0, 180);
 		}
-		if (Input.GetKeyDown("s"))
+		if (Input.GetKeyDown("s") && gm.transform.localRotation != Quaternion.Euler(0.0f, 0.0f, 90.0f))
 		{
 			gm.transform.localRotation = Quaternion.Euler(0, 0, -90); ;
 		}
-		if (Input.GetKeyDown("d"))
+		if (Input.GetKeyDown("d")&& gm.transform.localRotation != Quaternion.Euler(0.0f, 0.0f, 180.0f))
 		{
 			gm.transform.localRotation = Quaternion.Euler(0, 0, 0);
 		}
