@@ -1,6 +1,6 @@
 fileFormatVersion: 2
-guid: 2d07d443172b50f4bbc60fc2f705d7fb
-timeCreated: 1510156682
+guid: 1c1a699465f7ac943b5bc56ffdd23812
+timeCreated: 1510163286
 licenseType: Free
 ModelImporter:
   serializedVersion: 21
@@ -9,7 +9,7 @@ ModelImporter:
     400000: //RootNode
     2300000: //RootNode
     3300000: //RootNode
-    4300000: deur/raam
+    4300000: lamp
     9500000: //RootNode
   materials:
     importMaterials: 1
