@@ -4,20 +4,32 @@ using UnityEngine;
 
 public class Moving : MonoBehaviour
 {
-	//public Camera cam;
-	public float speed;
+	public float speed ;
+	private Vector3 targetPosition;
+	private bool isMoving;
+	public GameObject clickAnimation;
 
 
-
-	public void Start()
+	void Update()
 	{
+		targetPosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+		targetPosition.z = transform.position.z;
+
+		if (isMoving == false)
+		{
+				isMoving = true;
+			
+		}
 		
-	}
+		if (isMoving == true)
+		{
 
-	public void Update()
-	{
-
-		float speedH = Input.GetAxis("Horizontal") * speed;
-		transform.Translate(speedH, 0.0f, 0.0f);
+			transform.position = Vector3.MoveTowards(transform.position, targetPosition, speed * Time.deltaTime);
+		}
+		if (targetPosition == transform.position)
+		{
+			isMoving = false;
+			Destroy(GameObject.Find("Click Animation(Clone)"));
+		}
 	}
 }

@@ -20,11 +20,9 @@ public class Die : MonoBehaviour
 
 	void OnCollisionEnter(Collision other)
 	{
-		print("c");
+
 		if (other.gameObject.CompareTag("water"))
 		{
-
-			print("a");
 			SceneManager.LoadScene("zombie");
 		}
 	}
