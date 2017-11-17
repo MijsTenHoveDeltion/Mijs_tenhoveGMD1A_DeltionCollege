@@ -22,7 +22,7 @@ GameObject:
   - component: {fileID: 33550246748566996}
   - component: {fileID: 135980153697757706}
   - component: {fileID: 23979302061540280}
-  - component: {fileID: 114802687947140378}
+  - component: {fileID: 114252671292606528}
   m_Layer: 0
   m_Name: zombie
   m_TagString: zombie
@@ -82,7 +82,7 @@ MeshFilter:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1800782517413822}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!114 &114802687947140378
+--- !u!114 &114252671292606528
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -94,11 +94,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
-  speed: 0
-  enemie_Emitter: {fileID: 1800782517413822}
-  zombie: {fileID: 1800782517413822}
-  randomx: 0
-  spawnrater: 0
+  speed: 5
 --- !u!135 &135980153697757706
 SphereCollider:
   m_ObjectHideFlags: 1

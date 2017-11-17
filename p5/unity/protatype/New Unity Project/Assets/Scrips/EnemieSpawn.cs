@@ -4,25 +4,29 @@ using UnityEngine;
 
 public class EnemieSpawn : MonoBehaviour
 {
-	public List<GameObject> zz = new List<GameObject>();
 	public float health = 50f;
 	public float speed;
 	public GameObject enemie_Emitter;
-
 	public GameObject zombie;
-	public float zombiecont;
 	private IEnumerator coroutine;
+
+	float randx;
+	Vector2 wheretospawn;
+
+	public float manny;
 
 	// Use this for initialization
 	void Start()
 	{
-		coroutine = WaitAndPrint(5.0f);
+		coroutine = WaitAndPrint(manny);
 		StartCoroutine(coroutine);
 
 		print("Before WaitAndPrint Finishes " + Time.time);
 		
 
 	}
+
+	
 
 
 	// every 2 seconds perform the print()
@@ -31,10 +35,13 @@ public class EnemieSpawn : MonoBehaviour
 		while (true)
 		{
 			GameObject Temporary_zombie_Handler;
-			Temporary_zombie_Handler = Instantiate(zombie, enemie_Emitter.transform.position, enemie_Emitter.transform.rotation) as GameObject;
+
+			randx = Random.Range (-8.0f, 8.0f);
+			wheretospawn = new Vector2(randx, transform.position.y);
+
+			Temporary_zombie_Handler = Instantiate(zombie, wheretospawn, enemie_Emitter.transform.rotation) as GameObject;
 			Rigidbody Temporary_RigidBody;
 			Temporary_RigidBody = Temporary_zombie_Handler.GetComponent<Rigidbody>();
-			
 			Destroy(Temporary_zombie_Handler, 5.0f);
 
 

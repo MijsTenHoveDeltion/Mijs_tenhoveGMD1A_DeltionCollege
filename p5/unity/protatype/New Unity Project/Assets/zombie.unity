@@ -304,6 +304,27 @@ MonoBehaviour:
   Bullet: {fileID: 1717113257633700, guid: 74047f880f2e9834e9109fe1150c0bcb, type: 2}
   Bullet_Forward_Force: 0
   bullt: {fileID: 1717113257633700, guid: 74047f880f2e9834e9109fe1150c0bcb, type: 2}
+--- !u!1 &764992845 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1979918927929604, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
+    type: 2}
+  m_PrefabInternal: {fileID: 910667162}
+--- !u!114 &764992846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 764992845}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d1229fe73eda41418f1524fdf467f1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 50
+  speed: 1
+  enemie_Emitter: {fileID: 764992845}
+  zombie: {fileID: 1800782517413822, guid: f65edb33e67c88f43a13d92239b06b4f, type: 2}
+  manny: 2
 --- !u!1001 &910667162
 Prefab:
   m_ObjectHideFlags: 0
@@ -311,6 +332,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
+        type: 2}
+      propertyPath: spawnPoints.Array.size
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 4991309485427984, guid: 2d3749abe86e84743bb0cc2c3b78e28d, type: 2}
       propertyPath: m_LocalPosition.x
       value: -0.5858995
@@ -321,7 +347,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4991309485427984, guid: 2d3749abe86e84743bb0cc2c3b78e28d, type: 2}
       propertyPath: m_LocalPosition.z
-      value: 1.3320312
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4991309485427984, guid: 2d3749abe86e84743bb0cc2c3b78e28d, type: 2}
       propertyPath: m_LocalRotation.x
@@ -346,14 +372,30 @@ Prefab:
     - target: {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
         type: 2}
       propertyPath: randomx
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
         type: 2}
       propertyPath: spawnrater
-      value: 3
+      value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
+        type: 2}
+      propertyPath: zombiecont
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
+        type: 2}
+      propertyPath: spawnTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d,
+        type: 2}
+      propertyPath: speed
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114577183685998822, guid: 2d3749abe86e84743bb0cc2c3b78e28d, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 2d3749abe86e84743bb0cc2c3b78e28d, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1160155274
@@ -633,7 +675,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1717113257633700, guid: 74047f880f2e9834e9109fe1150c0bcb, type: 2}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4771184941765394, guid: 74047f880f2e9834e9109fe1150c0bcb, type: 2}
       propertyPath: m_LocalScale.y
