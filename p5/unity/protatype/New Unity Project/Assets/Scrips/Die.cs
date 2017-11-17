@@ -25,5 +25,9 @@ public class Die : MonoBehaviour
 		{
 			SceneManager.LoadScene("zombie");
 		}
+		if (other.gameObject.CompareTag("zombie"))
+		{
+			SceneManager.LoadScene("zombie");
+		}
 	}
 }

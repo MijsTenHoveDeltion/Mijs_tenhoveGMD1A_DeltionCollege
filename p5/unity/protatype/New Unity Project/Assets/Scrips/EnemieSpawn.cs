@@ -11,37 +11,41 @@ public class EnemieSpawn : MonoBehaviour
 
 	public GameObject zombie;
 	public float zombiecont;
+	private IEnumerator coroutine;
 
 	// Use this for initialization
-	void Start ()
+	void Start()
 	{
+		coroutine = WaitAndPrint(5.0f);
+		StartCoroutine(coroutine);
+
+		print("Before WaitAndPrint Finishes " + Time.time);
 		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-
-		More();
 
 	}
-	public void More()
-	{
 
-		if (zombiecont > zz.Count)
+
+	// every 2 seconds perform the print()
+	private IEnumerator WaitAndPrint(float waitTime)
+	{
+		while (true)
 		{
-
 			GameObject Temporary_zombie_Handler;
 			Temporary_zombie_Handler = Instantiate(zombie, enemie_Emitter.transform.position, enemie_Emitter.transform.rotation) as GameObject;
 			Rigidbody Temporary_RigidBody;
 			Temporary_RigidBody = Temporary_zombie_Handler.GetComponent<Rigidbody>();
-			zz.Add(Temporary_zombie_Handler);
-			//zz.Remove(Temporary_zombie_Handler);
+			
 			Destroy(Temporary_zombie_Handler, 5.0f);
 
-			//	transform.Translate(Vector3.up * speed * Time.deltaTime);
 
+			yield return new WaitForSeconds(waitTime);
+			print("WaitAndPrint " + Time.time);
 		}
 	}
-	
+
+
 }
+
+
+
+

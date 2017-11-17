@@ -24,6 +24,18 @@ public class Bad : MonoBehaviour
 
 
 	}
+	void OnCollisionEnter(Collision other)
+	{
 
-	
+
+		if (other.gameObject.CompareTag("car"))
+		{
+
+			Destroy(other.gameObject);
+			Destroy(this.gameObject);
+
+		}
+	}
+
+
 }
