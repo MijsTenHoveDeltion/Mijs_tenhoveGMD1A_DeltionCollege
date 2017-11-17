@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class Moving : MonoBehaviour
 {
@@ -8,6 +9,9 @@ public class Moving : MonoBehaviour
 	private Vector3 targetPosition;
 	private bool isMoving;
 	public GameObject clickAnimation;
+
+	public Text countText;
+	public int counit;
 
 
 	void Update()

@@ -9,6 +9,7 @@ public class Bullet : MonoBehaviour
 	public float amount;
 	Bad bad;
 	EnemieSpawn es;
+	Moving car;
 	
 	
 	// Update is called once per frame
@@ -26,8 +27,13 @@ public class Bullet : MonoBehaviour
 		
 			Destroy(other.gameObject);
 			Destroy(this.gameObject);
-		
+			print("dg");
+			//car.counit += 1 ;
+
+			//car.countText.text = "Count: " + car.counit.ToString();
 		}
+
+
 	}
 }
 

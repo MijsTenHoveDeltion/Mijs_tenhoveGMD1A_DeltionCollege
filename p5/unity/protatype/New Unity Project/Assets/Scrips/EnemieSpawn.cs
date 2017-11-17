@@ -21,7 +21,7 @@ public class EnemieSpawn : MonoBehaviour
 		coroutine = WaitAndPrint(manny);
 		StartCoroutine(coroutine);
 
-		print("Before WaitAndPrint Finishes " + Time.time);
+		//print("Before WaitAndPrint Finishes " + Time.time);
 		
 
 	}
@@ -46,7 +46,7 @@ public class EnemieSpawn : MonoBehaviour
 
 
 			yield return new WaitForSeconds(waitTime);
-			print("WaitAndPrint " + Time.time);
+			//print("WaitAndPrint " + Time.time);
 		}
 	}
 
