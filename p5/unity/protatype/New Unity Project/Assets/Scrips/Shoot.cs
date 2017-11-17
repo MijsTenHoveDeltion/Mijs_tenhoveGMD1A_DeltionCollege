@@ -39,11 +39,11 @@ public class Shoot : MonoBehaviour
 				Debug.Log(hiting.transform.name);
 
 
-				Bad bad = hiting.transform.GetComponent<Bad>();
-				if (bad != null)
-				{
-					bad.TakeDamage(damige);
-				}
+				//Bad bad = hiting.transform.GetComponent<Bad>();
+			//	if (bad != null)
+			//	{
+				//	bad.TakeDamage(damige);
+				//}
 
 			}
 		}

@@ -4,8 +4,15 @@ using UnityEngine;
 
 public class Bad : MonoBehaviour
 {
-
+	
 	public float health = 50f;
+	public float speed;
+
+
+	public void Update()
+	{
+		transform.Translate(Vector3.down * speed * Time.deltaTime);
+	}
 
 	public void TakeDamage(float amount)
 	{
@@ -17,4 +24,6 @@ public class Bad : MonoBehaviour
 
 
 	}
+
+	
 }

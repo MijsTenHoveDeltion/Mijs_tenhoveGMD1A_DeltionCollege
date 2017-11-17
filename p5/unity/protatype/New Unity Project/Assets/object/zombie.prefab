@@ -56,7 +56,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: c5873994641fbbe4c9e6420910a68abe, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -94,6 +94,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   health: 50
+  speed: 0
+  enemie_Emitter: {fileID: 1800782517413822}
+  zombie: {fileID: 1800782517413822}
+  randomx: 0
+  spawnrater: 0
 --- !u!135 &135980153697757706
 SphereCollider:
   m_ObjectHideFlags: 1

@@ -4,9 +4,11 @@ using UnityEngine;
 
 public class Bullet : MonoBehaviour
 {
+	
 	public float speed;
-	public float damige;
+	public float amount;
 	Bad bad;
+	EnemieSpawn es;
 	
 	
 	// Update is called once per frame
@@ -21,17 +23,10 @@ public class Bullet : MonoBehaviour
 
 		if (other.gameObject.CompareTag("zombie"))
 		{
-			print(" 2t");
-			//if (bad != null)
-			//{
-				
-			if (bad != null)
-			{
-				print(" abullet");
-				bad.TakeDamage(damige);
-			}
-			//	Destroy(this);
-			//}
+		
+			Destroy(other.gameObject);
+			Destroy(this.gameObject);
+			Destroy(es.zz.this.gameObject);
 		}
 	}
 }
