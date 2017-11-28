@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Collor : MonoBehaviour
 {
-	public GameObject penel;
 
 	public SpriteRenderer hooft;
 	public SpriteRenderer armen;
@@ -92,18 +91,7 @@ public class Collor : MonoBehaviour
 		}
 	}
 
-
-	public void OpenPenel()
-	{
-		penel.SetActive(true);
-		
-	}
-
-	public void ClosePenel()
-	{
-		penel.SetActive(false);
-	}
-
+	
 
 
 
