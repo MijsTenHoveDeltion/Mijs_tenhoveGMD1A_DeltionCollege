@@ -27,7 +27,6 @@ public class BlokjeEI : MonoBehaviour
 			if (Input.GetButtonDown("Fire1"))
 		    {
 			transform.rotation = Quaternion.Euler (new Vector3(0,0,(int)Noord.n));
-
 		    }
 	}
 
