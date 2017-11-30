@@ -11,7 +11,7 @@ public class Collor : MonoBehaviour
 	public SpriteRenderer bennen;
 	public SpriteRenderer torso;
 	public SpriteRenderer neus1;
-	public Sprite neus2;
+	//public Sprite neus2;
 
 
 	public Image sqere;
@@ -36,10 +36,10 @@ public class Collor : MonoBehaviour
 			bennen.color = white;
 			torso.color = white;
 			sqere.color = white;
-			if (neus1.sprite != neus2)
-			{
+			//if (neus1.sprite != neus2)
+			//{
 				neus1.color = white;
-			}
+			//}
 		}
 		else if (whatCollor == 2)
 		{
@@ -48,10 +48,10 @@ public class Collor : MonoBehaviour
 			bennen.color = pink;
 			torso.color = pink;
 			sqere.color = pink;
-			if (neus1.sprite != neus2)
-			{
+			//if (neus1.sprite != neus2)
+			//{
 				neus1.color = pink;
-			}
+			//}
 		}
 		else if (whatCollor == 3)
 		{
@@ -60,10 +60,10 @@ public class Collor : MonoBehaviour
 			bennen.color = coffe;
 			torso.color = coffe;
 			sqere.color = coffe;
-			if (neus1.sprite != neus2)
-			{
+			//if (neus1.sprite != neus2)
+		//	{
 				neus1.color = coffe;
-			}
+	   //	}
 		}
 		else if (whatCollor == 4 )
 		{
@@ -72,10 +72,10 @@ public class Collor : MonoBehaviour
 			bennen.color = dark;
 			torso.color = dark;
 			sqere.color = dark;
-			if (neus1.sprite != neus2)
-			{
+			//if (neus1.sprite != neus2)
+		///	{
 				neus1.color = dark;
-			}
+		//	}
 		}
 		else if (whatCollor == 5)
 		{
@@ -84,10 +84,10 @@ public class Collor : MonoBehaviour
 			bennen.color = green;
 			torso.color = green;
 			sqere.color = green;
-			if (neus1.sprite != neus2)
-			{
+			//if (neus1.sprite != neus2)
+		//	{
 				neus1.color = green;
-			}
+			//}
 		}
 	}
 

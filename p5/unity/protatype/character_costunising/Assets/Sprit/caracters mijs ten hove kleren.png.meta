@@ -1,0 +1,262 @@
+fileFormatVersion: 2
+guid: f9fba361c6557e8498404a5cd90e3e58
+timeCreated: 1511965677
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: caracters mijs ten hove kleren_0
+    21300002: caracters mijs ten hove kleren_1
+    21300004: caracters mijs ten hove kleren_2
+    21300006: caracters mijs ten hove kleren_3
+    21300008: caracters mijs ten hove kleren_4
+    21300010: caracters mijs ten hove kleren_5
+    21300012: caracters mijs ten hove kleren_6
+    21300014: caracters mijs ten hove kleren_7
+    21300016: caracters mijs ten hove kleren_8
+    21300018: caracters mijs ten hove kleren_9
+    21300020: caracters mijs ten hove kleren_10
+    21300022: caracters mijs ten hove kleren_11
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapU: 1
+    wrapV: -1
+    wrapW: -1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 150
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 1514
+        width: 572
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_1
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 738
+        width: 572
+        height: 735
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_2
+      rect:
+        serializedVersion: 2
+        x: 661
+        y: 1133
+        width: 333
+        height: 530
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_3
+      rect:
+        serializedVersion: 2
+        x: 1275
+        y: 19
+        width: 367
+        height: 441
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_4
+      rect:
+        serializedVersion: 2
+        x: 747
+        y: 11
+        width: 533
+        height: 510
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_5
+      rect:
+        serializedVersion: 2
+        x: 1721
+        y: 202
+        width: 184
+        height: 165
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_6
+      rect:
+        serializedVersion: 2
+        x: 1521
+        y: 460
+        width: 612
+        height: 966
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_7
+      rect:
+        serializedVersion: 2
+        x: 1442
+        y: 1565
+        width: 788
+        height: 675
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_8
+      rect:
+        serializedVersion: 2
+        x: 621
+        y: 1701
+        width: 805
+        height: 545
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_9
+      rect:
+        serializedVersion: 2
+        x: 1066
+        y: 545
+        width: 421
+        height: 834
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_10
+      rect:
+        serializedVersion: 2
+        x: 39
+        y: 33
+        width: 315
+        height: 244
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_11
+      rect:
+        serializedVersion: 2
+        x: 378
+        y: 35
+        width: 311
+        height: 242
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    outline: []
+    physicsShape: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
