@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f9fba361c6557e8498404a5cd90e3e58
-timeCreated: 1512135411
+timeCreated: 1512136353
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -107,7 +107,7 @@ TextureImporter:
         serializedVersion: 2
         x: 1
         y: 625
-        width: 586
+        width: 569
         height: 845
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -147,10 +147,10 @@ TextureImporter:
       name: caracters mijs ten hove kleren_4
       rect:
         serializedVersion: 2
-        x: 751
-        y: 52
+        x: 750
+        y: 51
         width: 536
-        height: 479
+        height: 514
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -245,7 +245,7 @@ TextureImporter:
       name: caracters mijs ten hove kleren_11
       rect:
         serializedVersion: 2
-        x: 384
+        x: 386
         y: 35
         width: 311
         height: 242
