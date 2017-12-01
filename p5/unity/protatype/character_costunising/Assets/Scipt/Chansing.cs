@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class Chansing : MonoBehaviour
 {
-	public SpriteRenderer nose;
 	public SpriteRenderer part;
 	public Sprite[] option;
 	public int index;
@@ -36,13 +35,13 @@ public class Chansing : MonoBehaviour
 
 	public void SwapBack()
 	{
-		if (index < option.Length - 1)
+		if (index != 0 )
 		{
 			index--;
 		}
 		else
 		{
-			index = 0;
+			index = option.Length ;
 		}
 
 	}

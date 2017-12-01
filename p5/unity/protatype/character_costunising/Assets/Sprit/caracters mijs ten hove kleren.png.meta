@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: f9fba361c6557e8498404a5cd90e3e58
-timeCreated: 1511965677
+timeCreated: 1512135411
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -16,6 +16,7 @@ TextureImporter:
     21300018: caracters mijs ten hove kleren_9
     21300020: caracters mijs ten hove kleren_10
     21300022: caracters mijs ten hove kleren_11
+    21300024: caracters mijs ten hove kleren_12
   serializedVersion: 4
   mipmaps:
     mipMapMode: 0
@@ -90,8 +91,8 @@ TextureImporter:
       name: caracters mijs ten hove kleren_0
       rect:
         serializedVersion: 2
-        x: 27
-        y: 1514
+        x: 11
+        y: 1515
         width: 572
         height: 735
       alignment: 0
@@ -104,10 +105,10 @@ TextureImporter:
       name: caracters mijs ten hove kleren_1
       rect:
         serializedVersion: 2
-        x: 27
-        y: 738
-        width: 572
-        height: 735
+        x: 1
+        y: 625
+        width: 586
+        height: 845
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,10 +133,10 @@ TextureImporter:
       name: caracters mijs ten hove kleren_3
       rect:
         serializedVersion: 2
-        x: 1275
-        y: 19
-        width: 367
-        height: 441
+        x: 1314
+        y: 57
+        width: 323
+        height: 413
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -146,10 +147,10 @@ TextureImporter:
       name: caracters mijs ten hove kleren_4
       rect:
         serializedVersion: 2
-        x: 747
-        y: 11
-        width: 533
-        height: 510
+        x: 751
+        y: 52
+        width: 536
+        height: 479
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,10 +175,10 @@ TextureImporter:
       name: caracters mijs ten hove kleren_6
       rect:
         serializedVersion: 2
-        x: 1521
-        y: 460
-        width: 612
-        height: 966
+        x: 1543
+        y: 441
+        width: 541
+        height: 938
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -216,10 +217,10 @@ TextureImporter:
       name: caracters mijs ten hove kleren_9
       rect:
         serializedVersion: 2
-        x: 1066
-        y: 545
-        width: 421
-        height: 834
+        x: 1036
+        y: 496
+        width: 486
+        height: 883
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,12 +231,12 @@ TextureImporter:
       name: caracters mijs ten hove kleren_10
       rect:
         serializedVersion: 2
-        x: 39
+        x: 38
         y: 33
         width: 315
         height: 244
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,12 +245,26 @@ TextureImporter:
       name: caracters mijs ten hove kleren_11
       rect:
         serializedVersion: 2
-        x: 378
+        x: 384
         y: 35
         width: 311
         height: 242
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: caracters mijs ten hove kleren_12
+      rect:
+        serializedVersion: 2
+        x: 638
+        y: 630
+        width: 376
+        height: 287
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
