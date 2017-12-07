@@ -3600,6 +3600,8 @@ MonoBehaviour:
   option:
   - {fileID: 21300000, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300002, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
+  - {fileID: 21300018, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
+  - {fileID: 21300020, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
   index: 3
 --- !u!1 &1029753737
 GameObject:
@@ -4421,6 +4423,7 @@ MonoBehaviour:
   option:
   - {fileID: 21300004, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300024, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
+  - {fileID: 21300002, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
   index: 1
 --- !u!1 &1249963367
 GameObject:
@@ -4727,6 +4730,7 @@ MonoBehaviour:
   option:
   - {fileID: 21300020, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300022, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
+  - {fileID: 21300004, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
   index: 1
 --- !u!1 &1278811254
 GameObject:
@@ -5463,6 +5467,7 @@ MonoBehaviour:
   option:
   - {fileID: 21300016, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300024, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
+  - {fileID: 21300008, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
   index: 1
 --- !u!224 &1389527200
 RectTransform:
@@ -6609,7 +6614,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 3
+  m_SortingOrder: 2
   m_Sprite: {fileID: 21300006, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -6756,6 +6761,10 @@ MonoBehaviour:
   option:
   - {fileID: 21300006, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300008, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
+  - {fileID: 21300000, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
+  - {fileID: 21300002, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
+  - {fileID: 21300006, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
+  - {fileID: 21300012, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
   index: 3
 --- !u!1 &1750063855
 GameObject:
@@ -7884,6 +7893,8 @@ MonoBehaviour:
   option:
   - {fileID: 21300018, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300012, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
+  - {fileID: 21300000, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
+  - {fileID: 21300010, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
   index: 3
 --- !u!1 &2022792148
 GameObject:
@@ -8414,7 +8425,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2080768563
 RectTransform:
   m_ObjectHideFlags: 0
