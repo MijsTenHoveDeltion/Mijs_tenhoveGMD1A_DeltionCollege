@@ -1,6 +1,6 @@
 fileFormatVersion: 2
 guid: d78102980e6acfc42b8d867da3eb276f
-timeCreated: 1512651546
+timeCreated: 1512914548
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
@@ -83,7 +83,7 @@ TextureImporter:
       name: caracters mijs ten hove more2_0
       rect:
         serializedVersion: 2
-        x: 990
+        x: 977
         y: 1033
         width: 583
         height: 1109
@@ -97,8 +97,8 @@ TextureImporter:
       name: caracters mijs ten hove more2_1
       rect:
         serializedVersion: 2
-        x: 95
-        y: 867
+        x: 88
+        y: 843
         width: 406
         height: 633
       alignment: 0
@@ -139,9 +139,9 @@ TextureImporter:
       name: caracters mijs ten hove more2_4
       rect:
         serializedVersion: 2
-        x: 1092
-        y: 349
-        width: 855
+        x: 1062
+        y: 356
+        width: 805
         height: 545
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
