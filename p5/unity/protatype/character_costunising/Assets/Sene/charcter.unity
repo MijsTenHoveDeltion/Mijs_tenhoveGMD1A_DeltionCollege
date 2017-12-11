@@ -355,7 +355,7 @@ MonoBehaviour:
   - {fileID: 21300004, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
   - {fileID: 21300006, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
   - {fileID: 21300008, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
-  index: 3
+  index: 0
 --- !u!1 &89184899
 GameObject:
   m_ObjectHideFlags: 0
@@ -1564,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &489226961
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1855,9 +1855,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'shirt
-
-'
+  m_Text: top
 --- !u!222 &536946486
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1931,9 +1929,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'neus
-
-'
+  m_Text: nose
 --- !u!222 &551421992
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2258,7 +2254,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'vest
+  m_Text: 'coat
 
 
 '
@@ -3601,7 +3597,7 @@ MonoBehaviour:
   - {fileID: 21300002, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300018, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
   - {fileID: 21300020, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
-  index: 3
+  index: 0
 --- !u!1 &1029753737
 GameObject:
   m_ObjectHideFlags: 0
@@ -3861,7 +3857,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'broek
+  m_Text: 'bottom
 
 '
 --- !u!222 &1122354727
@@ -4730,7 +4726,7 @@ MonoBehaviour:
   - {fileID: 21300020, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300022, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300004, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
-  index: 1
+  index: 0
 --- !u!1 &1278811254
 GameObject:
   m_ObjectHideFlags: 0
@@ -5467,7 +5463,7 @@ MonoBehaviour:
   - {fileID: 21300016, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300024, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300008, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
-  index: 1
+  index: 0
 --- !u!224 &1389527200
 RectTransform:
   m_ObjectHideFlags: 0
@@ -6081,9 +6077,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'kleren
-
-'
+  m_Text: "\rclothes\n"
 --- !u!222 &1466712594
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6410,9 +6404,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'wenkbrouwen
-
-'
+  m_Text: "\reyebrows\n"
 --- !u!222 &1573391182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -6764,7 +6756,7 @@ MonoBehaviour:
   - {fileID: 21300002, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
   - {fileID: 21300006, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
   - {fileID: 21300012, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
-  index: 3
+  index: 0
 --- !u!1 &1750063855
 GameObject:
   m_ObjectHideFlags: 0
@@ -6832,10 +6824,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'schoenen
-
-
-'
+  m_Text: "shoes\r\n\n"
 --- !u!222 &1750063858
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -7894,7 +7883,7 @@ MonoBehaviour:
   - {fileID: 21300012, guid: f9fba361c6557e8498404a5cd90e3e58, type: 3}
   - {fileID: 21300000, guid: d78102980e6acfc42b8d867da3eb276f, type: 3}
   - {fileID: 21300010, guid: 6d7ecfaa0cf0a824fb109915b4940ef4, type: 3}
-  index: 3
+  index: 0
 --- !u!1 &2022792148
 GameObject:
   m_ObjectHideFlags: 0
@@ -8159,7 +8148,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: haar
+  m_Text: hair
 --- !u!222 &2044939589
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -8716,7 +8705,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'mond
+  m_Text: 'mouth
 
 '
 --- !u!222 &2146048448
