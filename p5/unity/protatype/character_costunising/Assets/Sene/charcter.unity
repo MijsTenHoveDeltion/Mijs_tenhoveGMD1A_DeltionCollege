@@ -355,7 +355,6 @@ MonoBehaviour:
   - {fileID: 21300004, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
   - {fileID: 21300006, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
   - {fileID: 21300008, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
-  - {fileID: 21300008, guid: a6ebe03dcb1c2c6408c8ae85949bfcb3, type: 3}
   index: 3
 --- !u!1 &89184899
 GameObject:
@@ -847,7 +846,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 1, g: 1, b: 1, a: 1}
-    m_PressedColor: {r: 0.6666667, g: 0.6666667, b: 0.6666667, a: 1}
+    m_PressedColor: {r: 0.9568628, g: 0.9568628, b: 0.9568628, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
     m_FadeDuration: 0.1
@@ -1565,7 +1564,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &489226961
 RectTransform:
   m_ObjectHideFlags: 0

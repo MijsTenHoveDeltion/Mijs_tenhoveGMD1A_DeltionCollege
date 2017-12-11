@@ -35,17 +35,14 @@ public class Chansing : MonoBehaviour
 
 	public void SwapBack()
 	{
-			if (index != 0)
+			if ( index != 0  )
 			{
-
 				index--;
-
-
 			}
 		
 		else
 		{
-			index = option.Length ;
+			index = option.Length -1 ;
 		}
 
 	}
