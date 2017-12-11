@@ -6,5 +6,8 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Sene/menu.unity
+    guid: 0d5af3c3cbdcf5f4d8823b36fc22ddce
+  - enabled: 1
     path: Assets/Sene/charcter.unity
     guid: 41508ff7529249f43895925b8decf93d
