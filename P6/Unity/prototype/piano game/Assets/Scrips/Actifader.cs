@@ -6,30 +6,54 @@ public class Actifader : MonoBehaviour
 {
 	public string key;
 	public GameObject note;
-	public bool boo;
+	bool boo;
 
-	void Update ()
+	private void Start()
 	{
-		if (Input.GetKeyDown(key)&&boo)
+		//sprit = GetComponent<SpriteRenderer>();
+
+	}
+
+	void Update()
+	{
+		if (Input.GetKeyDown(key))
 		{
-		
+			StartCoroutine(Colors());	
+		}
+		else
+		{
+			GetComponent<SpriteRenderer>().color = Color.white;
+		}
+
+		if (Input.GetKeyDown(key) && boo)
+		{
 			Destroy(note);
 		}
 	}
-	public void  OnCollisionEnter2D(Collision2D coll)
-	{	boo = true;
+	public void OnTriggerStay2D(Collider2D coll)
+	{
+
+		boo = true;
 		if (coll.gameObject.tag == "note")
 		{
 			note = coll.gameObject;
-			
+
 		}
-		
 	}
 
-	public void OnCollisionExit2D(Collision2D coll)
+	public void OnTriggerExit2D(Collider2D collision)
 	{
 		boo = false;
 	}
+
+
+	IEnumerator Colors()
+	{
+		yield return new WaitForSeconds(0.1f);
+		GetComponent<SpriteRenderer>().color = Color.red;
+	}
+
+
 
 }
 
