@@ -8,28 +8,48 @@ public class Actifader : MonoBehaviour
 	public GameObject note;
 	bool boo;
 
+	public Score sk;
+	public int points;
+	public AudioSource sound;
+
 	private void Start()
 	{
-		//sprit = GetComponent<SpriteRenderer>();
+		sound = GetComponent<AudioSource>();
 
 	}
 
 	void Update()
-	{
+	{ 
+	
 		if (Input.GetKeyDown(key))
 		{
-			StartCoroutine(Colors());	
+			StartCoroutine(Colors());
+			KaySound();
 		}
 		else
 		{
-			GetComponent<SpriteRenderer>().color = Color.white;
+			if (Input.GetKeyUp(key))
+			{
+				GetComponent<SpriteRenderer>().color = Color.white;
+			}
+			
 		}
 
 		if (Input.GetKeyDown(key) && boo)
 		{
+			Points();
 			Destroy(note);
+			
 		}
 	}
+
+	public void Points()
+	{
+		sk.counit += points;
+		print("points");
+	}
+
+
 	public void OnTriggerStay2D(Collider2D coll)
 	{
 
@@ -49,8 +69,14 @@ public class Actifader : MonoBehaviour
 
 	IEnumerator Colors()
 	{
-		yield return new WaitForSeconds(0.1f);
 		GetComponent<SpriteRenderer>().color = Color.red;
+		yield return new WaitForSeconds(0.2f);
+		
+	}
+
+	public void KaySound()
+	{
+		sound.Play();
 	}
 
 
