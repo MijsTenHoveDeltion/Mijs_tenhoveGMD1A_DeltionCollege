@@ -163,6 +163,8 @@ MonoBehaviour:
   note: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   sk: {fileID: 0}
   points: 10
+  sound: {fileID: 0}
+  collor: {r: 0.7531992, g: 0.6091047, b: 0.9632353, a: 1}
 --- !u!212 &212112422912588204
 SpriteRenderer:
   m_ObjectHideFlags: 1

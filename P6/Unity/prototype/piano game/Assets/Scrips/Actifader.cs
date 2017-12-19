@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Actifader : MonoBehaviour
 {
 	public string key;
@@ -11,6 +12,9 @@ public class Actifader : MonoBehaviour
 	public Score sk;
 	public int points;
 	public AudioSource sound;
+	public Color collor;
+	
+	
 
 	private void Start()
 	{
@@ -25,6 +29,7 @@ public class Actifader : MonoBehaviour
 		{
 			StartCoroutine(Colors());
 			KaySound();
+			
 		}
 		else
 		{
@@ -69,7 +74,7 @@ public class Actifader : MonoBehaviour
 
 	IEnumerator Colors()
 	{
-		GetComponent<SpriteRenderer>().color = Color.red;
+		GetComponent<SpriteRenderer>().color = collor;
 		yield return new WaitForSeconds(0.2f);
 		
 	}

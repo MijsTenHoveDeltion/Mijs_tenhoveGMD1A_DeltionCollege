@@ -2,44 +2,52 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class KaySpawn : MonoBehaviour
+public class Adding : MonoBehaviour
 {
 
-	
-	public float speed;
+	//public float speed;
 	public GameObject kay;
 	public GameObject note;
-	private IEnumerator coroutine;
+	//private IEnumerator coroutine;
 
 	float randx;
 	Vector2 wheretospawn;
+	public string kaay;
+	
 
-	public float manny;
-	public float mannymore;
-	public float stard;
+	
 
 	// Use this for initialization
 	void Start()
 	{
-		coroutine = WaitAndPrint(stard);
-		StartCoroutine(coroutine);
 	}
 
-	private IEnumerator WaitAndPrint(float f)
+	public void Update()
 	{
-		while (true)
+
+		if (Input.GetKeyDown(kaay))
 		{
+
+			Spam();
+		}
+	}
+
+
+	public void Spam()
+	{
 			GameObject Temporary_zombie_Handler;
 
 			randx = this.gameObject.transform.position.x;
 			wheretospawn = new Vector2(randx, transform.position.y);
 
 			Temporary_zombie_Handler = Instantiate(note, wheretospawn, kay.transform.rotation) as GameObject;
-			Destroy(Temporary_zombie_Handler, 10.0f);
-			yield return new WaitForSeconds(Random.Range(manny,mannymore));
+			//Destroy(Temporary_zombie_Handler, 10.0f);
 			
-		}
+
 		
+
 	}
-	
+
 }
+
+
