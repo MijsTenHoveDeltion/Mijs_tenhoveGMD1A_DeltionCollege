@@ -134,7 +134,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 30
-  stard: 0
+  stard: 1
 --- !u!1 &181442535
 GameObject:
   m_ObjectHideFlags: 0
@@ -277,6 +277,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1805683986}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3a379f74b71e5df41aa8e131ccfe722d, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -522,6 +527,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 938764542}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 653ee583138a85c4bbd7d8d48b21248f, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -776,7 +786,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d77b3ab19ba0df74dbaf275ccafe5aba, type: 3}
+      objectReference: {fileID: 8300000, guid: 73da2c27a37361a499748d339139137e, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -851,6 +861,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 384023431}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: f63f9921e8c1e5846957be458bcae812, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -880,7 +895,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 30
-  stard: 0
+  stard: 1
 --- !u!1 &732806547 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1153507963293124, guid: 8bc78ce8c940fb84c9dbd31403939cba,
@@ -907,7 +922,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 20
-  stard: 0
+  stard: 1
 --- !u!1 &770555410 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1153507963293124, guid: 8bc78ce8c940fb84c9dbd31403939cba,
@@ -934,7 +949,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 20
-  stard: 0
+  stard: 1
 --- !u!1 &837224464
 GameObject:
   m_ObjectHideFlags: 0
@@ -1592,6 +1607,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1642619976}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 225bdf33fb362134e804106afaa95217, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -1621,7 +1641,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 50
-  stard: 0
+  stard: 1
 --- !u!1001 &1457367137
 Prefab:
   m_ObjectHideFlags: 0
@@ -1693,6 +1713,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1620317499}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: d1b7520ac3011d948b636e276d3689f9, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -1875,6 +1900,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 900918562}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: da831895fb00d5e46ba8aa6e2d82e730, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -2053,7 +2083,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 20
-  stard: 0
+  stard: 1
 --- !u!1001 &1607656627
 Prefab:
   m_ObjectHideFlags: 0
@@ -2368,6 +2398,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 1968139052}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: 3052cd3748655b547943a6caae095755, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -2475,7 +2510,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 30
-  stard: 0
+  stard: 1
 --- !u!4 &1805683985 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4088191852587520, guid: 8bc78ce8c940fb84c9dbd31403939cba,
@@ -2557,6 +2592,11 @@ Prefab:
       propertyPath: sound
       value: 
       objectReference: {fileID: 485672481}
+    - target: {fileID: 82880205937288154, guid: 8bc78ce8c940fb84c9dbd31403939cba,
+        type: 2}
+      propertyPath: m_audioClip
+      value: 
+      objectReference: {fileID: 8300000, guid: c485ea3ae2a6ad241aa83bf65872940f, type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 8bc78ce8c940fb84c9dbd31403939cba, type: 2}
   m_IsPrefabParent: 0
@@ -2596,7 +2636,7 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 50
-  stard: 0
+  stard: 1
 --- !u!1001 &2044534110
 Prefab:
   m_ObjectHideFlags: 0
@@ -2721,4 +2761,4 @@ MonoBehaviour:
   zombie: {fileID: 1245249711477414, guid: 64eb25d4ab866e34c99c731cebd83663, type: 2}
   manny: 10
   mannymore: 20
-  stard: 0
+  stard: 1
