@@ -14,16 +14,18 @@ public class Actifader : MonoBehaviour
 	public int points;
 	public AudioSource sound;
 	public Color collor;
+	public AudioSource boooh;
+	public AudioSource aplouse;
 
-	public Image spBadGood;
+	public Slider slider;
+	public float floatSlider;
 	
 	
 
 	private void Start()
 	{
 		sound = GetComponent<AudioSource>();
-		spBadGood.transform.position = new Vector2(0, 0);
-
+		slider.value = 0;
 	}
 
 	void Update()
@@ -55,6 +57,13 @@ public class Actifader : MonoBehaviour
 	public void Points()
 	{
 		sk.counit += points;
+		slider.value += floatSlider;
+
+		if (slider.value == 1f)
+		{
+			sk.counit += points;
+			aplouse.Play();
+		}
 	}
 
 
@@ -88,10 +97,15 @@ public class Actifader : MonoBehaviour
 		sound.Play();
 		if (boo == false)
 		{
-			
 			if (sk.counit != 0)
-			{print("dood");
+			{
 				sk.counit -= points;
+				slider.value -= floatSlider;
+			}
+			if (sk.counit == 0)
+			{
+				print("boo");
+				boooh.Play();
 			}
 			
 		}
