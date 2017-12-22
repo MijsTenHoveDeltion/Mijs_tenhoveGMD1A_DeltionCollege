@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 
 public class Actifader : MonoBehaviour
@@ -13,12 +14,15 @@ public class Actifader : MonoBehaviour
 	public int points;
 	public AudioSource sound;
 	public Color collor;
+
+	public Image spBadGood;
 	
 	
 
 	private void Start()
 	{
 		sound = GetComponent<AudioSource>();
+		spBadGood.transform.position = new Vector2(0, 0);
 
 	}
 
@@ -51,7 +55,6 @@ public class Actifader : MonoBehaviour
 	public void Points()
 	{
 		sk.counit += points;
-		print("points");
 	}
 
 
@@ -64,6 +67,7 @@ public class Actifader : MonoBehaviour
 			note = coll.gameObject;
 
 		}
+	
 	}
 
 	public void OnTriggerExit2D(Collider2D collision)
@@ -82,6 +86,15 @@ public class Actifader : MonoBehaviour
 	public void KaySound()
 	{
 		sound.Play();
+		if (boo == false)
+		{
+			
+			if (sk.counit != 0)
+			{print("dood");
+				sk.counit -= points;
+			}
+			
+		}
 	}
 
 
