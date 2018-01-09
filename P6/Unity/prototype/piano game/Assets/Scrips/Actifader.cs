@@ -74,7 +74,7 @@ public class Actifader : MonoBehaviour
 		if (coll.gameObject.tag == "note")
 		{
 			note = coll.gameObject;
-
+			
 		}
 	
 	}
@@ -104,12 +104,12 @@ public class Actifader : MonoBehaviour
 			}
 			if (sk.counit == 0)
 			{
-				print("boo");
 				boooh.Play();
 			}
 			
 		}
 	}
+
 
 
 
