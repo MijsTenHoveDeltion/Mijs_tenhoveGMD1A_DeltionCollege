@@ -14,20 +14,11 @@ public class Adding : MonoBehaviour
 	Vector2 wheretospawn;
 	public string kaay;
 	
-
-	
-
-	// Use this for initialization
-	void Start()
-	{
-	}
-
 	public void Update()
 	{
 
 		if (Input.GetKeyDown(kaay))
 		{
-
 			Spam();
 		}
 	}
@@ -41,11 +32,6 @@ public class Adding : MonoBehaviour
 			wheretospawn = new Vector2(randx, transform.position.y);
 
 			Temporary_zombie_Handler = Instantiate(note, wheretospawn, kay.transform.rotation) as GameObject;
-			//Destroy(Temporary_zombie_Handler, 10.0f);
-			
-
-		
-
 	}
 
 }

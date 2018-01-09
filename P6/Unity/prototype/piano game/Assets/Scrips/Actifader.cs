@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 
 public class Actifader : MonoBehaviour
@@ -11,6 +12,7 @@ public class Actifader : MonoBehaviour
 	bool boo;
 
 	public Score sk;
+	public Menu menu;
 	public int points;
 	public AudioSource sound;
 	public Color collor;
@@ -19,6 +21,8 @@ public class Actifader : MonoBehaviour
 
 	public Slider slider;
 	public float floatSlider;
+
+	public GameObject last;
 	
 	
 
@@ -74,9 +78,12 @@ public class Actifader : MonoBehaviour
 		if (coll.gameObject.tag == "note")
 		{
 			note = coll.gameObject;
-			
+
 		}
-	
+		if (coll.gameObject == last)
+		{
+			menu.Beck();
+		}
 	}
 
 	public void OnTriggerExit2D(Collider2D collision)
@@ -109,6 +116,8 @@ public class Actifader : MonoBehaviour
 			
 		}
 	}
+	
+
 
 
 

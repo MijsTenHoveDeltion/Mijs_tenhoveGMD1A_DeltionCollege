@@ -14,6 +14,11 @@ public class Menu : MonoBehaviour
 	
 		
 	}
+	public void Beck()
+	{
+		SceneManager.LoadScene(0);
+		
+	}
 
 	public void Play()
 	{
@@ -29,12 +34,10 @@ public class Menu : MonoBehaviour
 	{
 		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
 	}
-	public void Diff()
+	public void Song1()
 	{
-
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 2);
 	}
-	public void Imps()
-	{
+	
 
-	}
 }

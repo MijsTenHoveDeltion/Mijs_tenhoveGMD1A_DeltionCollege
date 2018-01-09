@@ -4,4 +4,13 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/game/menu.unity
+    guid: 51955c4ac646de543b02ac8094d84710
+  - enabled: 1
+    path: Assets/game/pianoGame.unity
+    guid: 38fef20e9a4a9dd46a801bd87a698431
+  - enabled: 1
+    path: Assets/game/pianoGame_song1.unity
+    guid: 3498123ad9d9ece45b961e742bef4782

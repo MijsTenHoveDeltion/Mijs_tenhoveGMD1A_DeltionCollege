@@ -5,11 +5,13 @@ using UnityEngine.UI;
 
 public class DeadZone : MonoBehaviour
 {
-	public int i;
+	Menu menu;
+
 	public void OnCollisionEnter2D(Collision2D colli)
 	{
 		if (colli.gameObject.tag == "note")
-		{	
+		{
+			print("col");
 			Destroy(colli.gameObject);
 		}
 	}
