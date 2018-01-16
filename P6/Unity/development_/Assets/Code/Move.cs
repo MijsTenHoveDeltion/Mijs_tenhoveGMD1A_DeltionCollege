@@ -1,16 +1,36 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
-public class Move : MonoBehaviour {
+public class Move : MonoBehaviour
+{
+	public GameManager gm;
+	public NavMeshAgent nm;
+	public Transform t;
 
-	// Use this for initialization
-	void Start () {
-		
+	public void Start()
+	{
+		print("movestart");
+		nm = this.GetComponent<NavMeshAgent>();
+		if (nm == null)
+		{
+			Debug.LogError("nope" + gameObject.name);
+		}
+		else
+		{
+			Moving();
+		}
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	public void Moving()
+	{
+		;
+		if (nm != null)
+		{
+			Vector3 trans = t.transform.position;
+			nm.SetDestination(trans);
+		}
 	}
+
 }

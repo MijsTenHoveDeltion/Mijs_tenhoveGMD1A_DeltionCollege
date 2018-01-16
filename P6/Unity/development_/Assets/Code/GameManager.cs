@@ -3,14 +3,15 @@ using System.Collections.Generic;
 using UnityEngine;
 
 public class GameManager : MonoBehaviour {
+	  public Move move; 
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+
+
 	
 	// Update is called once per frame
-	void Update () {
-		
+	void Update ()
+	{
+		//print("gmupdate");
+		//move.Moving();
 	}
 }
