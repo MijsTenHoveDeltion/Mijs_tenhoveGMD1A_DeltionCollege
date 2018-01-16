@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - note
+  - Dead
   layers:
   - Default
   - TransparentFX

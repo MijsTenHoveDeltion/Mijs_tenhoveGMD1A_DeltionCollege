@@ -35,7 +35,7 @@ public class KaySpawn : MonoBehaviour
 			wheretospawn = new Vector2(randx, transform.position.y);
 
 			Temporary_zombie_Handler = Instantiate(note, wheretospawn, kay.transform.rotation) as GameObject;
-			Destroy(Temporary_zombie_Handler, 10.0f);
+			//Destroy(Temporary_zombie_Handler, 10.0f);
 			yield return new WaitForSeconds(Random.Range(manny,mannymore));
 			
 		}
