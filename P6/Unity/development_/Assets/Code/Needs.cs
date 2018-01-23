@@ -5,10 +5,13 @@ using UnityEngine.UI;
 
 public class Needs : MonoBehaviour
 {
-	public Slider food;
-	public Slider wc;
-	public Slider energie;
+	public List<Slider> sl = new List<Slider>();
+
+	public Slider slider;
+
 	public Move move;
+	public float time = 0.1f;
+	public float getting = 1.1f;
 
 	public void Update()
 	{
@@ -17,24 +20,38 @@ public class Needs : MonoBehaviour
 	}
 
 	public void LowerBar()
-	{//food.value > 0 || move.WTD != Move.WatTeDoen.ET
-		if (GameObject.Transform.posision = move.foodpos)
+	{
+		if (slider.value > slider.minValue )
 		{
-			food.value -= 0.1f * Time.deltaTime ;
+			slider.value -= time * Time.deltaTime ;
 		}
 	}
 
 	public void Movingto()
 	{
-		if (food.value < 1.0f)
+		for (int i = 0; i < sl.Count; i++)
 		{
-			move.WTD = Move.WatTeDoen.ET;
-			move.Moving();
-		}
-		if (move.WTD == Move.WatTeDoen.ET)
+			if (sl[i].value <= 1)
 			{
-				food.value += 0.2f * Time.deltaTime;
+				//move.WTD = Move.WatTeDoen./*wat het laagts is */;
 			}
+		}
+			move.Moving();
 	}
 
+	public void OnTriggerEnter(Collider other)
+	{
+		print("coll");
+		if (slider.value < slider.maxValue)
+		{
+			slider.value += getting * Time.deltaTime;
+		}
+	}
 }
+
+
+
+
+	
+
+

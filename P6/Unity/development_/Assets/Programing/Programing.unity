@@ -97,7 +97,7 @@ NavMeshSettings:
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
-    agentSlope: 45
+    agentSlope: 0
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
@@ -506,7 +506,7 @@ GameObject:
   - component: {fileID: 195201296}
   - component: {fileID: 195201297}
   m_Layer: 5
-  m_Name: food (1)
+  m_Name: wc
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -575,7 +575,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 2.23
+  m_Value: 5
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -814,10 +814,10 @@ GameObject:
   - component: {fileID: 567237991}
   - component: {fileID: 567237990}
   - component: {fileID: 567237989}
-  - component: {fileID: 567237992}
+  - component: {fileID: 567237993}
   m_Layer: 0
   m_Name: Cube
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -861,7 +861,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 567237984}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -910,11 +910,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   nm: {fileID: 567237991}
-  food: {fileID: 1531039714}
+  foodpos: {fileID: 1531039714}
   bed: {fileID: 699758614}
   toylet: {fileID: 1970403245}
   player: {fileID: 567237988}
-  WTD: 2
+  intje: 0
+  WTD: 0
 --- !u!195 &567237991
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -936,19 +937,21 @@ NavMeshAgent:
   m_BaseOffset: 0.5
   m_WalkableMask: 1
   m_ObstacleAvoidanceType: 4
---- !u!114 &567237992
-MonoBehaviour:
+--- !u!54 &567237993
+Rigidbody:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 567237984}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 059761c7ff8e5d24d95e020010f63a03, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  food: {fileID: 1182630257}
-  move: {fileID: 567237990}
+  serializedVersion: 2
+  m_Mass: 1
+  m_Drag: 0
+  m_AngularDrag: 0.05
+  m_UseGravity: 1
+  m_IsKinematic: 0
+  m_Interpolate: 0
+  m_Constraints: 0
+  m_CollisionDetection: 0
 --- !u!1 &699758613
 GameObject:
   m_ObjectHideFlags: 0
@@ -960,8 +963,9 @@ GameObject:
   - component: {fileID: 699758617}
   - component: {fileID: 699758616}
   - component: {fileID: 699758615}
+  - component: {fileID: 699758618}
   m_Layer: 0
-  m_Name: bed
+  m_Name: bedoject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -974,8 +978,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699758613}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.011, y: 8.6, z: 4.37}
-  m_LocalScale: {x: 0.5000001, y: 10, z: 0.10000003}
+  m_LocalPosition: {x: -0.058, y: 7.4, z: 5.16}
+  m_LocalScale: {x: 0.5000001, y: 7.34604, z: 0.31772682}
   m_Children: []
   m_Father: {fileID: 97234292}
   m_RootOrder: 9
@@ -993,7 +997,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a67362b9d980a3a44876bac8dad10e1a, type: 2}
+  - {fileID: 2100000, guid: 25e54b6a3096bac4d96ec6ed97ac6bda, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1019,7 +1023,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699758613}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -1031,6 +1035,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 699758613}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &699758618
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699758613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059761c7ff8e5d24d95e020010f63a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sl:
+  - {fileID: 1182630257}
+  - {fileID: 1374863743}
+  - {fileID: 195201297}
+  slider: {fileID: 1374863743}
+  move: {fileID: 567237990}
+  time: 0.05
+  getting: 1.6
 --- !u!1 &708798452
 GameObject:
   m_ObjectHideFlags: 0
@@ -1874,7 +1897,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 1.57
+  m_Value: 1.75
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1993,7 +2016,7 @@ MonoBehaviour:
   m_MinValue: 0
   m_MaxValue: 5
   m_WholeNumbers: 0
-  m_Value: 4.1
+  m_Value: 3.98
   m_OnValueChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -2112,8 +2135,9 @@ GameObject:
   - component: {fileID: 1531039717}
   - component: {fileID: 1531039716}
   - component: {fileID: 1531039715}
+  - component: {fileID: 1531039718}
   m_Layer: 0
-  m_Name: food
+  m_Name: foodobject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2126,8 +2150,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1531039713}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: -0.504, y: 8.6, z: -2.02}
-  m_LocalScale: {x: 0.5000001, y: 10, z: 0.10000003}
+  m_LocalPosition: {x: -0.518, y: 8.6, z: -2.23}
+  m_LocalScale: {x: 0.71369576, y: 30.410019, z: 0.1655386}
   m_Children: []
   m_Father: {fileID: 97234292}
   m_RootOrder: 8
@@ -2171,10 +2195,10 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1531039713}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1.1, y: 1.1, z: 1.1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!33 &1531039717
 MeshFilter:
@@ -2183,6 +2207,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1531039713}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1531039718
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1531039713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059761c7ff8e5d24d95e020010f63a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sl:
+  - {fileID: 1182630257}
+  - {fileID: 1374863743}
+  - {fileID: 195201297}
+  slider: {fileID: 1182630257}
+  move: {fileID: 567237990}
+  time: 0.1
+  getting: 1.1
 --- !u!1 &1679196615
 GameObject:
   m_ObjectHideFlags: 0
@@ -2662,8 +2705,9 @@ GameObject:
   - component: {fileID: 1970403248}
   - component: {fileID: 1970403247}
   - component: {fileID: 1970403246}
+  - component: {fileID: 1970403249}
   m_Layer: 0
-  m_Name: WC
+  m_Name: WCobject
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2676,8 +2720,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1970403244}
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.992, y: 8.6, z: -0.02}
-  m_LocalScale: {x: 0.5000001, y: 10, z: 0.10000003}
+  m_LocalPosition: {x: 0.93, y: 8.6, z: -1.26}
+  m_LocalScale: {x: 1.6622536, y: 22.556131, z: 0.13845827}
   m_Children: []
   m_Father: {fileID: 97234292}
   m_RootOrder: 10
@@ -2695,7 +2739,7 @@ MeshRenderer:
   m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
   m_Materials:
-  - {fileID: 2100000, guid: a67362b9d980a3a44876bac8dad10e1a, type: 2}
+  - {fileID: 2100000, guid: 85579e580ef8f5e4d83873033cbb69ab, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2721,7 +2765,7 @@ BoxCollider:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1970403244}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
@@ -2733,6 +2777,25 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1970403244}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1970403249
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970403244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 059761c7ff8e5d24d95e020010f63a03, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sl:
+  - {fileID: 1182630257}
+  - {fileID: 1374863743}
+  - {fileID: 195201297}
+  slider: {fileID: 195201297}
+  move: {fileID: 567237990}
+  time: 0.1
+  getting: 2
 --- !u!1 &2012821525
 GameObject:
   m_ObjectHideFlags: 0
