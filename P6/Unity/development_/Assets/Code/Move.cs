@@ -8,7 +8,7 @@ public class Move : MonoBehaviour
 {
 	
 	public NavMeshAgent nm;
-	public Transform food;
+	public Transform foodpos;
 	public Transform bed;
 	public Transform toylet;
 	public Transform player;
@@ -44,12 +44,12 @@ public class Move : MonoBehaviour
 		{
 			if (nm != null)
 			{
-			Vector3 trans = food.transform.position;
+			Vector3 trans = foodpos.transform.position;
 			nm.SetDestination(trans);
 		    }
 
 			print("et");
-			//WTD = WatTeDoen.EN;
+		 //WTD = WatTeDoen.EN;
 		}
 
 		if (WTD == WatTeDoen.EN)
