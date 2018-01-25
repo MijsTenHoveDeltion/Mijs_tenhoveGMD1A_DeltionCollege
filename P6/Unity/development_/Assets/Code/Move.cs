@@ -16,10 +16,10 @@ public class Move : MonoBehaviour
 
 	public enum WatTeDoen 
 	{
-		ET =1 ,
-		EN =2 ,
-		WC =3,
-		I =4, 
+		ET = 0,
+		EN = 1,
+		WC = 2,
+		I = 3, 
 
 	}
 	public WatTeDoen WTD;
@@ -33,37 +33,27 @@ public class Move : MonoBehaviour
 		}
 	}
 
-	public void Update()
-	{
-		//Moving();
-		
-	}
-
 	public void Moving(){
 		//WTD = WatTeDoen.ET;
-
-		if (WTD == WatTeDoen.ET)
+		if (intje == (int)WatTeDoen.ET)
 		{
-			//if (nm != null)
-			//{
 			Vector3 trans = foodpos.transform.position;
 			nm.SetDestination(trans);
-		   // }
 		}
 
-		if (WTD == WatTeDoen.EN)
+		if (intje == (int)WatTeDoen.EN)
 		{
 			Vector3 trans = bed.transform.position;
 			nm.SetDestination(trans);
 		}
 
-		if (WTD == WatTeDoen.WC)
+		if (intje == (int)WatTeDoen.WC)
 		{
 			Vector3 trans = toylet.transform.position;
 			nm.SetDestination(trans);
 		}
 
-		if (WTD == WatTeDoen.I)
+		if (intje == (int)WatTeDoen.I)
 		{
 			Vector3 trans = player.transform.position;
 			nm.SetDestination(trans);

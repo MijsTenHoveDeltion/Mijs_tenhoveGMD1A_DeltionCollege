@@ -33,7 +33,8 @@ public class Needs : MonoBehaviour
 		{
 			if (sl[i].value <= 1)
 			{
-				//move.WTD = Move.WatTeDoen./*wat het laagts is */;
+				print (i);
+				move.intje = i;	
 			}
 		}
 			move.Moving();
