@@ -5,5 +5,5 @@ using UnityEngine.UI;
 
 public class Note  
 {
-	nm.SetDestination(gm.transform.position);
+	//nm.SetDestination(gm.transform.position);
 }

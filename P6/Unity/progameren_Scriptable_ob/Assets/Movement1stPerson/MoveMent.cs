@@ -27,7 +27,7 @@ public class MoveMent : MonoBehaviour {
         transform.Translate(hor, 0, vert);
         transform.Rotate(0, horizontal, 0);
         vertRot -= vertical;
-        print(vertRot);
+       // print(vertRot);
         vertRot = Mathf.Clamp(vertRot, -updownRange, updownRange);
         Camera.main.transform.localRotation = Quaternion.Euler(vertRot, 0, 0);
 

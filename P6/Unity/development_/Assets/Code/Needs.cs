@@ -10,6 +10,8 @@ public class Needs : MonoBehaviour
 	public Slider slider;
 
 	public Move move;
+	public Food food;
+	public Apple apple;
 	public float time = 0.1f;
 	public float getting = 1.1f;
 
@@ -44,7 +46,11 @@ public class Needs : MonoBehaviour
 	{// als het gameobject colide met het gameobject en als de slider h=niet helemaal vol is. dan "laat je weer op"
 		if (slider.value < slider.maxValue)
 		{
+			print("slow");
 			slider.value += getting * Time.deltaTime;
+			print("slower");
+			apple.Eating();
+			print("slowest");
 		}
 	}
 }
