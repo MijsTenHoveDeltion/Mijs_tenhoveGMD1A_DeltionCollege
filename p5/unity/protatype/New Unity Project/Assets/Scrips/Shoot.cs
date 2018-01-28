@@ -13,7 +13,7 @@ public class Shoot : MonoBehaviour
 	public GameObject Bullet;
 	public float Bullet_Forward_Force;
 	public GameObject bullt;
-
+	public GameObject sound;
 
 	void Update()
 	{
@@ -31,6 +31,7 @@ public class Shoot : MonoBehaviour
 			Temporary_RigidBody = Temporary_Bullet_Handler.GetComponent<Rigidbody>();
 			Destroy(Temporary_Bullet_Handler, 5.0f);
 
+			Instantiate(sound);
 
 			Debug.DrawRay(transform.position, Vector3.up, Color.green);
 			if (Physics.Raycast(shootray, out hiting, range))

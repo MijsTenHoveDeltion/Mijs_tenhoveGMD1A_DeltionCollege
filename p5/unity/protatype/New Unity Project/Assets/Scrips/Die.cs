@@ -6,16 +6,18 @@ using UnityEngine.SceneManagement;
 public class Die : MonoBehaviour
 {
 
+
 	void OnCollisionEnter(Collision other)
 	{
 
 		if (other.gameObject.CompareTag("water"))
 		{
-			SceneManager.LoadScene("zombie");
+			
+			SceneManager.LoadScene(0);
 		}
 		if (other.gameObject.CompareTag("zombie"))
 		{
-			SceneManager.LoadScene("zombie");
+			SceneManager.LoadScene(0);
 		}
 	}
 }
