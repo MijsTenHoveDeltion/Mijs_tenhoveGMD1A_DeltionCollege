@@ -124,4 +124,4 @@ MonoBehaviour:
   speed: 5
   amount: 1
   expolsion: {fileID: 1210505369202908, guid: c0c9879c13bd9ff4583057218e5324d0, type: 2}
-  bang: {fileID: 1963471772504690, guid: f5224cdfe80914e4ca9d9d54247d886f, type: 2}
+  bang: {fileID: 1562079798132872, guid: badc79f5ea6f22140aa31e082dbf37f6, type: 2}
