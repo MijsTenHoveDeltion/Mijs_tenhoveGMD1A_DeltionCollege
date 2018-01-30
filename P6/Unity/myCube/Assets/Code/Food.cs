@@ -2,13 +2,16 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Apple : Food
+public class Food : MonoBehaviour
 {
 
-	public override void Eating()
+	public int eat;
+
+	public virtual void Eating()
 	{
-		base.Eating();
-		eat = 3;
+		eat = 1; 
 		print(eat);
 	}
+
+
 }

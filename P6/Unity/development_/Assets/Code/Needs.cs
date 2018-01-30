@@ -9,11 +9,15 @@ public class Needs : MonoBehaviour
 
 	public Slider slider;
 
+	//public GameObject thisobject;
+
 	public Move move;
-	public Food food;
-	public Apple apple;
+	//	public Food food;
+	//	public Apple apple;
+	//	public Coffie coffie;
+
 	public float time = 0.1f;
-	public float getting = 1.1f;
+	public float getting = 2f;
 
 	public void Update()
 	{
@@ -23,9 +27,9 @@ public class Needs : MonoBehaviour
 
 	public void LowerBar()
 	{
-		if (slider.value > slider.minValue )
+		if (slider.value > slider.minValue)
 		{
-			slider.value -= time * Time.deltaTime ;
+			slider.value -= time * Time.deltaTime;
 		}
 	}
 
@@ -35,23 +39,17 @@ public class Needs : MonoBehaviour
 		{
 			if (sl[i].value <= 1)
 			{
-				print (i);
-				move.intje = i;	
+
+				move.intje = i;
 			}
 		}
-			move.Moving();
+		move.Moving();
 	}
-
-	public void OnTriggerEnter(Collider other)
-	{// als het gameobject colide met het gameobject en als de slider h=niet helemaal vol is. dan "laat je weer op"
-		if (slider.value < slider.maxValue)
-		{
-			print("slow");
-			slider.value += getting * Time.deltaTime;
-			print("slower");
-			apple.Eating();
-			print("slowest");
-		}
+	// als het gameobject colide met het gameobject en als de slider h=niet helemaal vol is. dan "laat je weer op"
+	public void OnTriggerStay(Collider other)
+	{
+		print("dytk");
+		slider.value += getting * Time.deltaTime;
 	}
 }
 

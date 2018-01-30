@@ -8,7 +8,7 @@ public class Apple : Food
 	public override void Eating()
 	{
 		base.Eating();
-		eat = 3;
+		eat = 2;
 		print(eat);
 	}
 }

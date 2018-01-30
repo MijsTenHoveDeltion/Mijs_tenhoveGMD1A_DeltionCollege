@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Apple : Food
+public class Coffie : Food
 {
+	public int energie;
 
 	public override void Eating()
 	{
 		base.Eating();
-		eat = 3;
+		eat = 2;
 		print(eat);
 	}
 }
