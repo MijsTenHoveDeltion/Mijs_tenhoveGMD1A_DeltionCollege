@@ -46,7 +46,6 @@ public class Move : MonoBehaviour
 	}
 	public void Eten()
 	{
-
 		//if (intje == (int)WatTeDoen.ET)
 		//{
 			Vector3 trans = foodpos.transform.position;

@@ -4,4 +4,10 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Programing/Take care of my cube.unity
+    guid: 2b5a9ffe95ed6cd4f9b08abd6be9b25b
+  - enabled: 1
+    path: Assets/Programing/Programing.unity
+    guid: bc412f7f3b8128c4099372ef22580015

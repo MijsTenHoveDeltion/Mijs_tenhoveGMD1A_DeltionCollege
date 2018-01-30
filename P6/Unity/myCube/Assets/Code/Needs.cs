@@ -25,6 +25,22 @@ public class Needs : MonoBehaviour
 		Movingto();
 		move.Moving();
 	}
+	public void OnTriggerStay(Collider other)
+	{// als het gameobject colide met het gameobject en als de slider h=niet helemaal vol is. dan "laat je weer op"
+
+		print(" hoi");
+
+		slider.value += getting * Time.deltaTime;
+
+		//if (slider.value < slider.maxValue)
+		//{
+			//print("slow");
+			
+			//print("slower");
+			//apple.Eating();
+			//print("slowest");
+		//}
+	}
 
 	public void LowerBar()
 	{
@@ -51,23 +67,8 @@ public class Needs : MonoBehaviour
 	{
 		slider.value += getting * Time.deltaTime;
 	}
-	public void OnTriggerEnter(Collider other)
-	{// als het gameobject colide met het gameobject en als de slider h=niet helemaal vol is. dan "laat je weer op"
-		slider.value += getting * Time.deltaTime;
+	
 
-		if (slider.value < slider.maxValue)
-		{
-			//print("slow");
-			
-			//print("slower");
-			//apple.Eating();
-			//print("slowest");
-		}
-	}
-	public void OnCollisionStay(Collision collision)
-	{
-		slider.value += getting * Time.deltaTime;
-	}
 }
 
 
