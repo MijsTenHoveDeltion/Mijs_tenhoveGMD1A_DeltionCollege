@@ -22,25 +22,26 @@ public class Needs : MonoBehaviour
 		LowerBar();
 		Movingto();
 	}
-
-	public void OnTriggerStay(Collider other)
-	{// als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
-		print(" not borkestay");
-		if (coffie == true)
-		{
-			apple.Engergie();
-		};
-		need.Needing();
-	}
-	public void OnTriggerExit(Collider other)
-	{//doet als ontriggerenter op mijn laptop geen idee waaron dus doen we het maar
-		print(" not borke");
+	public void OnTriggerEnter(Collider other)
+	{//als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
+		print("enter");
 		if (coffie == true)
 		{
 			apple.Engergie();
 		}
 		need.Needing();
 	}
+
+	/*public void OnTriggerStay(Collider other)
+	{//doet als ontriggerenter op mijn laptop geen idee waaron dus doen we het maar 
+		print(" stay");
+		if (coffie == true)
+		{
+			apple.Engergie();
+		}
+		need.Needing();
+	}*/
+	
 	public void LowerBar()
 	{// om de sliders te laten aftellen
 		if (slider.value > slider.minValue )
