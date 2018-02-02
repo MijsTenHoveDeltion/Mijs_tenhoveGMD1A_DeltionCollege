@@ -9,15 +9,13 @@ public class Needs : MonoBehaviour
 
 	public Slider slider;
 
-	//public GameObject thisobject;
-
+	public Slider foodSlider;
+	public Slider energie;
 	public Move move;
-	//	public Food food;
-	//	public Apple apple;
-	//	public Coffie coffie;
-
+	public Food food;
+	public Apple apple;
 	public float time = 0.1f;
-	public float getting = 2f;
+	bool coffie;
 
 	public void Update()
 	{
@@ -25,31 +23,58 @@ public class Needs : MonoBehaviour
 		Movingto();
 	}
 
-	public void LowerBar()
-	{
-		if (slider.value > slider.minValue)
+	public void OnTriggerStay(Collider other)
+	{// als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
+		print(" not borkestay");
+		if (coffie == true)
 		{
-			slider.value -= time * Time.deltaTime;
+			apple.Engergie();
+		}
+		else
+		{
+			
+			//slider.value += 10 * Time.deltaTime;
+		}food.Eating();
+	}
+	public void OnTriggerExit(Collider other)
+	{//doet als ontriggerenter op mijn laptop geen idee waaron dus doen we het maar
+		print(" not borke");
+		if (coffie == true)
+		{
+			apple.Engergie();
+		}
+		else
+		{	
+			
+		//slider.value += 10 * Time.deltaTime;
+		}food.Eating();
+	}
+	public void LowerBar()
+	{// om de sliders te laten aftellen
+		if (slider.value > slider.minValue )
+		{
+			slider.value -= time * Time.deltaTime ;
 		}
 	}
-
 	public void Movingto()
 	{// een forloop gaat door de list met sliders. dan kijkt hij of de sliders value minder of gelijk is aan 1. zo ja i gelijk aan intje 
 		for (int i = 0; i < sl.Count; i++)
 		{
 			if (sl[i].value <= 1)
 			{
-
+				if (foodSlider.value <= 1 && energie.value <= 1)
+				{
+				move.intje = 0;
+				coffie = true;
+				}
+				else
+				{
+				coffie = false;
 				move.intje = i;
+				}
 			}
 		}
-		move.Moving();
-	}
-	// als het gameobject colide met het gameobject en als de slider h=niet helemaal vol is. dan "laat je weer op"
-	public void OnTriggerStay(Collider other)
-	{
-		print("dytk");
-		slider.value += getting * Time.deltaTime;
+			move.Moving();
 	}
 }
 

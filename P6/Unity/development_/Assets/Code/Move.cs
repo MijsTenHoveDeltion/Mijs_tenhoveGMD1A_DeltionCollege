@@ -14,6 +14,7 @@ public class Move : MonoBehaviour
 	public Transform player;
 	public int intje;
 
+	// een enum voor de verschildende pozieties voor de player 
 	public enum WatTeDoen 
 	{
 		ET = 0,
@@ -24,17 +25,7 @@ public class Move : MonoBehaviour
 	}
 	public WatTeDoen WTD;
 
-	public void Start()
-	{
-		nm = this.GetComponent<NavMeshAgent>();
-		if (nm == null)
-		{
-			print("nope" + gameObject.name);
-		}
-	}
-
 	public void Moving(){
-		//WTD = WatTeDoen.ET;
 		if (intje == (int)WatTeDoen.ET)
 		{
 			Vector3 trans = foodpos.transform.position;

@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class Apple : Food
 {
+	public int en;
 
-	public override void Eating()
-	{
+	public void Engergie()
+	{//om eating op te lateren komen zo als altijd maar ook on energie te krijgen van het eten
 		base.Eating();
-		eat = 3;
-		print(eat);
+		needs.sl[1].value += en *Time.deltaTime;
 	}
 }
