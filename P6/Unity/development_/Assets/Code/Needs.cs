@@ -12,7 +12,7 @@ public class Needs : MonoBehaviour
 	public Slider foodSlider;
 	public Slider energie;
 	public Move move;
-	public Food food;
+	public BasicNeed need;
 	public Apple apple;
 	public float time = 0.1f;
 	bool coffie;
@@ -29,12 +29,8 @@ public class Needs : MonoBehaviour
 		if (coffie == true)
 		{
 			apple.Engergie();
-		}
-		else
-		{
-			
-			//slider.value += 10 * Time.deltaTime;
-		}food.Eating();
+		};
+		need.Needing();
 	}
 	public void OnTriggerExit(Collider other)
 	{//doet als ontriggerenter op mijn laptop geen idee waaron dus doen we het maar
@@ -43,11 +39,7 @@ public class Needs : MonoBehaviour
 		{
 			apple.Engergie();
 		}
-		else
-		{	
-			
-		//slider.value += 10 * Time.deltaTime;
-		}food.Eating();
+		need.Needing();
 	}
 	public void LowerBar()
 	{// om de sliders te laten aftellen

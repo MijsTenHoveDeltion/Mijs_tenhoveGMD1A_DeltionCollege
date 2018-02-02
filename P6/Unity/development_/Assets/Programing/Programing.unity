@@ -1758,7 +1758,7 @@ MonoBehaviour:
   foodSlider: {fileID: 1182630257}
   energie: {fileID: 1374863743}
   move: {fileID: 567237990}
-  food: {fileID: 699758619}
+  need: {fileID: 699758619}
   apple: {fileID: 1531039720}
   time: 0.1
 --- !u!114 &699758619
@@ -1769,7 +1769,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 699758613}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ad7a74d214a61e429b37ee64b6f94e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d3b1164ffe64f2478954ad9c6492a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   needs: {fileID: 699758618}
@@ -3593,7 +3593,7 @@ MonoBehaviour:
   foodSlider: {fileID: 1182630257}
   energie: {fileID: 1374863743}
   move: {fileID: 567237990}
-  food: {fileID: 1531039719}
+  need: {fileID: 1531039719}
   apple: {fileID: 1531039720}
   time: 0.1
 --- !u!114 &1531039719
@@ -3604,7 +3604,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1531039713}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ad7a74d214a61e429b37ee64b6f94e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d3b1164ffe64f2478954ad9c6492a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   needs: {fileID: 1531039718}
@@ -4321,7 +4321,7 @@ MonoBehaviour:
   foodSlider: {fileID: 1182630257}
   energie: {fileID: 1374863743}
   move: {fileID: 567237990}
-  food: {fileID: 1970403250}
+  need: {fileID: 1970403250}
   apple: {fileID: 1531039720}
   time: 0.1
 --- !u!114 &1970403250
@@ -4332,7 +4332,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1970403244}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4ad7a74d214a61e429b37ee64b6f94e4, type: 3}
+  m_Script: {fileID: 11500000, guid: 9d3b1164ffe64f2478954ad9c6492a48, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   needs: {fileID: 1970403249}
