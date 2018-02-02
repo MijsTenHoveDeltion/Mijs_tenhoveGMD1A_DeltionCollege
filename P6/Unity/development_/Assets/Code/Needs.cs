@@ -31,16 +31,6 @@ public class Needs : MonoBehaviour
 		}
 		need.Needing();
 	}
-
-	/*public void OnTriggerStay(Collider other)
-	{//doet als ontriggerenter op mijn laptop geen idee waaron dus doen we het maar 
-		print(" stay");
-		if (coffie == true)
-		{
-			apple.Engergie();
-		}
-		need.Needing();
-	}*/
 	
 	public void LowerBar()
 	{// om de sliders te laten aftellen
