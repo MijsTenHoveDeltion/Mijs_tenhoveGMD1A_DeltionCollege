@@ -1354,7 +1354,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce01b2468a0f42c409becd27c0c6dfa6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  move: {fileID: 567237990}
 --- !u!114 &567237990
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1382,7 +1381,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 3.5
+  m_Speed: 6
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -1408,7 +1407,7 @@ Rigidbody:
   m_IsKinematic: 0
   m_Interpolate: 0
   m_Constraints: 0
-  m_CollisionDetection: 0
+  m_CollisionDetection: 1
 --- !u!1 &590894925
 GameObject:
   m_ObjectHideFlags: 0
@@ -1668,6 +1667,7 @@ GameObject:
   - component: {fileID: 699758615}
   - component: {fileID: 699758618}
   - component: {fileID: 699758619}
+  - component: {fileID: 699758620}
   m_Layer: 0
   m_Name: bedoject
   m_TagString: Untagged
@@ -1774,6 +1774,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needs: {fileID: 699758618}
   eat: 4
+--- !u!114 &699758620
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 699758613}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9a34c7d2be9c840a1ec1492ee0f121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &708798452
 GameObject:
   m_ObjectHideFlags: 0
@@ -3502,6 +3513,7 @@ GameObject:
   - component: {fileID: 1531039715}
   - component: {fileID: 1531039718}
   - component: {fileID: 1531039719}
+  - component: {fileID: 1531039721}
   - component: {fileID: 1531039720}
   m_Layer: 0
   m_Name: foodobject
@@ -3623,6 +3635,17 @@ MonoBehaviour:
   needs: {fileID: 1531039718}
   eat: 4
   en: 4
+--- !u!114 &1531039721
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1531039713}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9a34c7d2be9c840a1ec1492ee0f121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1590231683
 Prefab:
   m_ObjectHideFlags: 0
@@ -4231,6 +4254,7 @@ GameObject:
   - component: {fileID: 1970403246}
   - component: {fileID: 1970403249}
   - component: {fileID: 1970403250}
+  - component: {fileID: 1970403251}
   m_Layer: 0
   m_Name: WCobject
   m_TagString: Untagged
@@ -4337,6 +4361,17 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needs: {fileID: 1970403249}
   eat: 4
+--- !u!114 &1970403251
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1970403244}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af9a34c7d2be9c840a1ec1492ee0f121, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &2066957539
 Prefab:
   m_ObjectHideFlags: 0

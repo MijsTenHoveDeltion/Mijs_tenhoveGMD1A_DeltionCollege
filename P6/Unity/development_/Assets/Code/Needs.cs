@@ -22,7 +22,18 @@ public class Needs : MonoBehaviour
 		LowerBar();
 		Movingto();
 	}
-	public void OnTriggerEnter(Collider other)
+
+	void OnTriggerEnter(Collider other)
+	{//als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
+		print("ik");
+		if (coffie == true)
+		{
+			apple.Engergie();
+		}
+		need.Needing();
+	}
+
+	void OnTriggerStay(Collider other)
 	{//als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
 		print("enter");
 		if (coffie == true)
