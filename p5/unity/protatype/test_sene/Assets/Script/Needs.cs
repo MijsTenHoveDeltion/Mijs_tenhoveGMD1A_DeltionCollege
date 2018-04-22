@@ -6,19 +6,25 @@ using UnityEngine.AI;
 
 public class Needs : MonoBehaviour
 {
+	public int intje;
 	public float minimum;
 	public float time;
-	public float moreTime;
 	public Transform place;
 	public Slider slider;
 	public NavMeshAgent nm;
 
+	public enum DeEnum
+	{
+		ET,
+		EN,
+		WC,
+	}
+	public DeEnum ED;
+
 	public void Update()
 	{
-		
 		PrintBace();
 	}
-
 
 	public void PrintBace()
 	{
@@ -26,17 +32,32 @@ public class Needs : MonoBehaviour
 		{
 			slider.value -= time * Time.deltaTime;
 		}
+	
 
 		if (slider.value <= minimum)
+			{	Moving();
+				//Vector3 trans = place.transform.position;
+				//nm.SetDestination(trans);
+			}
+	}
+	public void Moving()
+	{
+		if (intje == (int)DeEnum.ET)
 		{
-		Vector3 trans = place.transform.position;
-		nm.SetDestination(trans);
+			Vector3 trans = place.transform.position;
+			nm.SetDestination(trans);
+		}
+
+		if (intje == (int)DeEnum.EN)
+		{
+			Vector3 trans = place.transform.position;
+			nm.SetDestination(trans);
+		}
+
+		if (intje == (int)DeEnum.WC)
+		{
+			Vector3 trans = place.transform.position;
+			nm.SetDestination(trans);
 		}
 	}
-	/*void OnTriggerStay(Collider other)
-	{//als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
-		print("stuf");
-		slider.value += moreTime* Time.deltaTime;
-		
-	}*/
 }

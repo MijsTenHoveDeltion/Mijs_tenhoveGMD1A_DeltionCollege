@@ -1097,12 +1097,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27ef38a61f7c0354798ca8a8ad4e10cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  intje: 1
   minimum: 0.2
   time: 0.02
-  moreTime: 0.8
   place: {fileID: 1176610324}
   slider: {fileID: 1592717040}
   nm: {fileID: 1085833793}
+  ED: 1
+  inTime: 1
 --- !u!23 &1176610321
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1283,12 +1285,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: af45a29bef45ca54aa9b2bce33c8ceb1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  intje: 1
   minimum: 0.2
   time: 0.03
-  moreTime: 0.7
   place: {fileID: 1323374148}
   slider: {fileID: 1009338344}
   nm: {fileID: 1085833793}
+  ED: 2
+  littleTime: 0.1
 --- !u!23 &1323374145
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1537,12 +1541,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5a0f2b92c7edc524f92949379562f0f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  intje: 1
   minimum: 0.2
   time: 0.05
-  moreTime: 0.8
   place: {fileID: 1585530695}
   slider: {fileID: 1161276016}
   nm: {fileID: 1085833793}
+  ED: 0
+  moreTime: 0.8
 --- !u!23 &1585530692
 MeshRenderer:
   m_ObjectHideFlags: 0
