@@ -12,6 +12,14 @@ public class Eat : Needs
 		if (other.tag == "Player")
 		{
 			slider.value += moreTime * Time.deltaTime;
+			/*switch (ED)
+			{
+				case DeEnum.ET:
+					print("eten");
+					break;
+			}
+			*/
 		}
+
 	}
 }

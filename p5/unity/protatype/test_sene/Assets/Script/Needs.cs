@@ -12,14 +12,15 @@ public class Needs : MonoBehaviour
 	public Transform place;
 	public Slider slider;
 	public NavMeshAgent nm;
+	public Statething playerskript;
 
-	public enum DeEnum
+/*	public enum DeEnum
 	{
 		ET,
 		EN,
 		WC,
-	}
-	public DeEnum ED;
+	}*/
+	//public DeEnum ED;
 
 	public void Update()
 	{
@@ -35,12 +36,12 @@ public class Needs : MonoBehaviour
 	
 
 		if (slider.value <= minimum)
-			{	Moving();
-				//Vector3 trans = place.transform.position;
-				//nm.SetDestination(trans);
+			{	
+				Vector3 trans = place.transform.position;
+				nm.SetDestination(trans);
 			}
 	}
-	public void Moving()
+	/*public void Moving()
 	{
 		if (intje == (int)DeEnum.ET)
 		{
@@ -58,6 +59,6 @@ public class Needs : MonoBehaviour
 		{
 			Vector3 trans = place.transform.position;
 			nm.SetDestination(trans);
-		}
+		}*/
 	}
-}
+

@@ -11,6 +11,13 @@ public class Sleep : Needs
 		if (other.tag == "Player")
 		{
 			slider.value += inTime * Time.deltaTime;
+		/*	switch (ED)
+			{
+				case DeEnum.EN:
+					print("slapen");
+					break;
+			}
+			*/
 
 		}
 	}
