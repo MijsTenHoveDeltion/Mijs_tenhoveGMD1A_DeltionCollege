@@ -13,15 +13,9 @@ public class Hygne : Needs
 		//als het gameobject colide met het gameobject en als de slider het niet helemaal vol is. dan "laat je weer op"
 		if (other.tag == "Player")
 		{
-			Statething.DeEnum = ED.ET;
+			playerskript.ED = Statething.DeEnum.WC;
 			slider.value += littleTime * Time.deltaTime;
-			//switch (ED)
-			//{
-				//case DeEnum.WC:
-			//		print("hygne");
-			//		break;
-			//}
-
+		
 		}
 	}
 

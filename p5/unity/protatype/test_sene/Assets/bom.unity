@@ -873,7 +873,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 498aee33e84100f47912d5f625460849, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ED: 0
+  ED: 1
 --- !u!1 &1111290586
 GameObject:
   m_ObjectHideFlags: 0
@@ -1200,6 +1200,7 @@ MonoBehaviour:
   place: {fileID: 1176610324}
   slider: {fileID: 1592717040}
   nm: {fileID: 1085833793}
+  playerskript: {fileID: 1085833795}
   inTime: 1
 --- !u!23 &1176610321
 MeshRenderer:
@@ -1387,6 +1388,7 @@ MonoBehaviour:
   place: {fileID: 1323374148}
   slider: {fileID: 1009338344}
   nm: {fileID: 1085833793}
+  playerskript: {fileID: 1085833795}
   littleTime: 0.1
 --- !u!23 &1323374145
 MeshRenderer:
@@ -1642,6 +1644,7 @@ MonoBehaviour:
   place: {fileID: 1585530695}
   slider: {fileID: 1161276016}
   nm: {fileID: 1085833793}
+  playerskript: {fileID: 1085833795}
   moreTime: 0.8
 --- !u!23 &1585530692
 MeshRenderer:

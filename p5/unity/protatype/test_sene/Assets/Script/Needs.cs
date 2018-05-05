@@ -14,13 +14,6 @@ public class Needs : MonoBehaviour
 	public NavMeshAgent nm;
 	public Statething playerskript;
 
-/*	public enum DeEnum
-	{
-		ET,
-		EN,
-		WC,
-	}*/
-	//public DeEnum ED;
 
 	public void Update()
 	{
@@ -28,7 +21,7 @@ public class Needs : MonoBehaviour
 	}
 
 	public void PrintBace()
-	{
+	{//kijkt eerst al de slider value niet 0 zo nee haalt het er met tijd ietjs er af.
 		if (slider.value > slider.minValue)
 		{
 			slider.value -= time * Time.deltaTime;
@@ -36,29 +29,15 @@ public class Needs : MonoBehaviour
 	
 
 		if (slider.value <= minimum)
-			{	
+		{
+			//zet statmachine naar walking dan verplaast de cubes naar de pozietie die hij moet.
+			playerskript.ED = Statething.DeEnum.walking;
+			
 				Vector3 trans = place.transform.position;
 				nm.SetDestination(trans);
-			}
-	}
-	/*public void Moving()
-	{
-		if (intje == (int)DeEnum.ET)
-		{
-			Vector3 trans = place.transform.position;
-			nm.SetDestination(trans);
-		}
 
-		if (intje == (int)DeEnum.EN)
-		{
-			Vector3 trans = place.transform.position;
-			nm.SetDestination(trans);
 		}
-
-		if (intje == (int)DeEnum.WC)
-		{
-			Vector3 trans = place.transform.position;
-			nm.SetDestination(trans);
-		}*/
 	}
+
+}
 

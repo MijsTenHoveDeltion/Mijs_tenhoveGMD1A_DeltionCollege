@@ -4,8 +4,10 @@ using UnityEngine;
 
 public class Statething : MonoBehaviour
 {
+	// de enum 
 	public enum DeEnum
 	{
+		nothing,
 		walking,
 		ET,
 		EN,
@@ -13,8 +15,14 @@ public class Statething : MonoBehaviour
 	}
 	public DeEnum ED;
 
+	public void Start()
+	{
+		ED = DeEnum.nothing;
+	}
+
 	public void Update()
 	{
+		//zorgt voor dat ik de enum kan veranderen
 			switch (ED)
 			{
 			case DeEnum.WC:
@@ -31,6 +39,10 @@ public class Statething : MonoBehaviour
 
 			case DeEnum.walking:
 				print("walking");
+				break;
+
+			default:
+				print("defold");
 				break;
 		}
 
