@@ -6,39 +6,34 @@ using UnityEditor;
 
 public class Hint : MonoBehaviour
 {
-	public float speed =1f;
-	//public SpriteRenderer gm;
+	public Image gm;
 	public Color green;
 	public Color white;
 	public bool repead = false;
 
-	float starttime;
-	
+	public bool klikbole;
 
 	// Use this for initialization
 	void Start()
 	{
-		starttime = Time.time;
-		//gm.color = green;
+		
+		gm.color = white;
 	}
 
 	// Update is called once per frame
 	void Update()
 	{
-		if (!repead)
-		{
-			print("1");
-			float t = (Time.deltaTime - starttime) * speed;
-			GetComponent<Image>().color = Color.Lerp(green, white, t);
-				
-		}
-		else
-		{
-			float t = ( Mathf.Sin(Time.deltaTime - starttime)* speed);
-			GetComponent<Image>().color = Color.Lerp(green, white, t);
-		}
-		print("2");
+		StartCoroutine("Waitforasecond");
 
+	}
+	IEnumerator Waitforasecond()
+	{
+		yield return new WaitForSeconds(10);
+
+
+		gm.color =green;
+		klikbole = true;
+		print("yaas");
 	}
 
 

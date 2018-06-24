@@ -10,8 +10,15 @@ public class Menus : MonoBehaviour
 	public List<GameObject> partical = new List<GameObject>();
 
 	public GameObject canvas;
+	public Hint hint;
 
-	public void reload()
+	void Update()
+	{
+
+		hintready = hint.klikbole;
+	}
+
+		public void reload()
 	{
 		SceneManager.LoadScene(0);
 
@@ -30,16 +37,21 @@ public class Menus : MonoBehaviour
 		Application.Quit();
 	}
 
-	public void Hint()
+	public void Hintje()
 	{
 		print("0werkt");
 		if (hintready == true)
 		{
-			print("werkt");
+			
 			int randomIndex = Random.Range(0, partical.Count);
 			partical[randomIndex].SetActive(true);
+			hint.gm.color = hint.white;
+			hint.klikbole = false;
 			StartCoroutine("Waitforasecond");
+print("werkt");
+			
 		}
+
 	}
 
 	IEnumerator Waitforasecond()
