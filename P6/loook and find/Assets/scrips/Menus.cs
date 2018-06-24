@@ -6,34 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class Menus : MonoBehaviour
 {
-	public Color hover;
-	public Color white;
-	public SpriteRenderer sp;
+	public bool hintready;
+	public List<GameObject> partical = new List<GameObject>();
 
 	public GameObject canvas;
-
-	// Use this for initialization
-	void Start ()
-	{
-		
-	}
-	
-	// Update is called once per frame
-	void Update ()
-	{
-		
-	}
-
-	public void OnMouseOver()
-	{
-		sp.color = hover;
-		print("werkt");
-	}
-	public void OnMouseExit()
-	{
-		sp.color = white;
-		print("werkt");
-	}
 
 	public void reload()
 	{
@@ -41,13 +17,40 @@ public class Menus : MonoBehaviour
 
 	}
 
-	public void Play()
+	public void Aan()
 	{
-		canvas.SetActive(false);
 		canvas.SetActive(true);
 	}
-	public void Quit()
+	public void Uit()
+	{
+		canvas.SetActive(false);
+	}
+	public void Quity()
 	{
 		Application.Quit();
+	}
+
+	public void Hint()
+	{
+		print("0werkt");
+		if (hintready == true)
+		{
+			print("werkt");
+			int randomIndex = Random.Range(0, partical.Count);
+			partical[randomIndex].SetActive(true);
+			StartCoroutine("Waitforasecond");
+		}
+	}
+
+	IEnumerator Waitforasecond()
+	{
+		yield return new WaitForSeconds(5);
+
+		for (int i = 0; i < partical.Count; i++)
+		{
+			partical[i].SetActive(false) ;
+		}
+
+		print("yaas");
 	}
 }

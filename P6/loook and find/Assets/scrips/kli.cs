@@ -9,6 +9,7 @@ public class kli : MonoBehaviour
 	public GameObject imagename;
 	public GameObject ob;
 	public Tacking tacking;
+	public Menus menus;
 
 	public GameObject ps;
 
@@ -20,15 +21,23 @@ public class kli : MonoBehaviour
 
 	public void OnMouseDown()
 	{
-		
+
 		Debug.Log(imagename);
 		Destroy(ob);
 		Destroy(imagename);
-		tacking.kliks += 1;
-		//ps.GetComponent<particleSystem>().enebleEmission = true;
 		ps.SetActive(true);
-		//Instantiate (splase, obplase, splase.rotation);
-		//Start(ps);
+
+		foreach (var item in menus.partical)
+		{
+
+			menus.partical.Remove(item);
+
+			print("2werkt");
+		}
+		tacking.kliks += 1;
+	
+		
+		
 	}
 
 }
