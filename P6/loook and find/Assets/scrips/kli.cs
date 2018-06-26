@@ -29,8 +29,9 @@ public class kli : MonoBehaviour
 
 		foreach (var item in menus.partical)
 		{
-
+	
 			menus.partical.Remove(item);
+			print("stuf");
 		}
 		tacking.kliks += 1;
 	

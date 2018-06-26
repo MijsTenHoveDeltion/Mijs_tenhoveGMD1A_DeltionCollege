@@ -54,19 +54,21 @@ public class Menus : MonoBehaviour
 
 		if (hintready == true)
 		{
-			
+
 			int randomIndex = Random.Range(0, partical.Count);
 			partical[randomIndex].SetActive(true);
-
+			//Destroy.partical.[randomIndex];
 			gm.color = white;
 		    hintready = false;
 
 			StartCoroutine("Waitforasecond");
 			StartCoroutine("Waitforgreen");
 			print("hint klik ");
+
+			
 		}
-		
-		
+
+
 	}
 
 	IEnumerator Waitforasecond()
@@ -82,7 +84,7 @@ public class Menus : MonoBehaviour
 	}
 	IEnumerator Waitforgreen()
 	{
-		yield return new WaitForSeconds(6);
+		yield return new WaitForSeconds(10);
 
 
 		gm.color = green;

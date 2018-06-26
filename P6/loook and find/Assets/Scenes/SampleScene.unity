@@ -5079,7 +5079,7 @@ MonoBehaviour:
   imagename: {fileID: 900404800}
   ob: {fileID: 133831467}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 1939871355}
 --- !u!1 &140952730
 GameObject:
@@ -10030,7 +10030,7 @@ MonoBehaviour:
   imagename: {fileID: 1090998086}
   ob: {fileID: 211207080}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 592938752}
 --- !u!1 &219646810
 GameObject:
@@ -15025,7 +15025,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 282840810}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0.34, z: -16.58}
+  m_LocalPosition: {x: 0, y: 0.34, z: -12.54}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -15053,8 +15053,8 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 289354176}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -34.6, y: -11, z: -51.2}
-  m_LocalScale: {x: 13.370122, y: 34.170433, z: 6.8340874}
+  m_LocalPosition: {x: -34.6, y: 12, z: -51.2}
+  m_LocalScale: {x: 10.255245, y: 26.209646, z: 5.2419295}
   m_Children:
   - {fileID: 1208697576}
   m_Father: {fileID: 1871954279}
@@ -15172,7 +15172,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -6
+  m_SortingOrder: -9
   m_Sprite: {fileID: 21300028, guid: 699a6953d32c523499e377a7bc4722f3, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -38915,7 +38915,7 @@ MonoBehaviour:
   imagename: {fileID: 47438759}
   ob: {fileID: 802863457}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 501822651}
 --- !u!1 &854192381
 GameObject:
@@ -39034,7 +39034,7 @@ MonoBehaviour:
   imagename: {fileID: 2071656691}
   ob: {fileID: 854192381}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 628902057}
 --- !u!1 &863753263
 GameObject:
@@ -53816,8 +53816,8 @@ RectTransform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1208697575}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.1, y: 0.1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 8.5}
+  m_LocalScale: {x: 0.16073544, y: 0.16073544, z: 1.6073543}
   m_Children:
   - {fileID: 1436906542}
   - {fileID: 916975849}
@@ -58596,7 +58596,7 @@ MonoBehaviour:
   imagename: {fileID: 1422720234}
   ob: {fileID: 1350276948}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 895824926}
 --- !u!1 &1362484892
 GameObject:
@@ -59645,7 +59645,7 @@ MonoBehaviour:
   imagename: {fileID: 1923073619}
   ob: {fileID: 1699122552}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 1066303787}
 --- !u!1 &1710005479
 GameObject:
@@ -64830,7 +64830,7 @@ MonoBehaviour:
   imagename: {fileID: 745756720}
   ob: {fileID: 1908315723}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 1345806047}
 --- !u!1 &1923073619
 GameObject:
@@ -78992,7 +78992,7 @@ MonoBehaviour:
   imagename: {fileID: 1577979905}
   ob: {fileID: 2036013055}
   tacking: {fileID: 730649573}
-  menus: {fileID: 0}
+  menus: {fileID: 1871954275}
   ps: {fileID: 2020648844}
 --- !u!1 &2070813426
 GameObject:
