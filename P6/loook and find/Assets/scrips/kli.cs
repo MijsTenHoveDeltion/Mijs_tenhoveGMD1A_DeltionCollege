@@ -16,7 +16,7 @@ public class kli : MonoBehaviour
 	void Start()
 	{
 		ps.SetActive( false);
-		//ps.GetComponent<particleSystem>().enebleEmission = false;
+		
 	}
 
 	public void OnMouseDown()
@@ -31,8 +31,6 @@ public class kli : MonoBehaviour
 		{
 
 			menus.partical.Remove(item);
-
-			print("2werkt");
 		}
 		tacking.kliks += 1;
 	

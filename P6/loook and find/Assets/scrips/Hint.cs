@@ -13,6 +13,8 @@ public class Hint : MonoBehaviour
 
 	public bool klikbole;
 
+
+
 	// Use this for initialization
 	void Start()
 	{
@@ -33,8 +35,12 @@ public class Hint : MonoBehaviour
 
 		gm.color =green;
 		klikbole = true;
-		print("yaas");
+		
 	}
+
+
+
+	
 
 
 }

@@ -10,12 +10,24 @@ public class Menus : MonoBehaviour
 	public List<GameObject> partical = new List<GameObject>();
 
 	public GameObject canvas;
-	public Hint hint;
+
+
+	public Image gm;
+	public Color green;
+	public Color white;
+
+	void Start()
+	{
+		gm.color = white;
+		hintready = false;
+		StartCoroutine("Waitforgreen");
+	}
 
 	void Update()
 	{
 
-		hintready = hint.klikbole;
+
+
 	}
 
 		public void reload()
@@ -39,19 +51,22 @@ public class Menus : MonoBehaviour
 
 	public void Hintje()
 	{
-		print("0werkt");
+
 		if (hintready == true)
 		{
 			
 			int randomIndex = Random.Range(0, partical.Count);
 			partical[randomIndex].SetActive(true);
-			hint.gm.color = hint.white;
-			hint.klikbole = false;
-			StartCoroutine("Waitforasecond");
-print("werkt");
-			
-		}
 
+			gm.color = white;
+		    hintready = false;
+
+			StartCoroutine("Waitforasecond");
+			StartCoroutine("Waitforgreen");
+			print("hint klik ");
+		}
+		
+		
 	}
 
 	IEnumerator Waitforasecond()
@@ -64,5 +79,15 @@ print("werkt");
 		}
 
 		print("yaas");
+	}
+	IEnumerator Waitforgreen()
+	{
+		yield return new WaitForSeconds(6);
+
+
+		gm.color = green;
+		hintready = true;
+		print("greenn");
+
 	}
 }
