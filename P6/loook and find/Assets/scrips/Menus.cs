@@ -16,6 +16,17 @@ public class Menus : MonoBehaviour
 	public Color green;
 	public Color white;
 
+	public void SetNull(GameObject toremove )
+	{
+		for (int i = 0; i < partical.Count; i++)
+		{
+			if (partical[i] == toremove)
+			{
+				partical[i] = null;
+			}
+		}
+	}
+
 	void Start()
 	{
 		gm.color = white;
@@ -25,7 +36,8 @@ public class Menus : MonoBehaviour
 
 	void Update()
 	{
-
+	
+			
 
 
 	}
@@ -61,8 +73,8 @@ public class Menus : MonoBehaviour
 			gm.color = white;
 		    hintready = false;
 
-			StartCoroutine("Waitforasecond");
-			StartCoroutine("Waitforgreen");
+			StartCoroutine(Waitforasecond());
+			StartCoroutine(Waitforgreen());
 			print("hint klik ");
 
 			
@@ -80,11 +92,31 @@ public class Menus : MonoBehaviour
 			partical[i].SetActive(false) ;
 		}
 
-		print("yaas");
+		
 	}
 	IEnumerator Waitforgreen()
 	{
 		yield return new WaitForSeconds(10);
+
+		List<int> index = new List<int>();
+		for (int i = 0; i < partical.Count; i++)
+		{
+			if (partical[i] == null)
+			{
+				print("part is snull");
+				//Destroy(partical[i]);
+				index.Add(i);
+			}
+		}
+
+		if (index.Count != 0)
+		{
+			for (int i = index.Count -1; i >= 0; i--)
+			{
+				partical.RemoveAt(index[i]);
+			}
+		}
+		
 
 
 		gm.color = green;

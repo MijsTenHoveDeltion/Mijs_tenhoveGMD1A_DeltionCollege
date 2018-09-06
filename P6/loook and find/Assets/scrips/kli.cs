@@ -10,33 +10,35 @@ public class kli : MonoBehaviour
 	public GameObject ob;
 	public Tacking tacking;
 	public Menus menus;
+	public GameObject oblist;
 
 	public GameObject ps;
 
 	void Start()
 	{
-		ps.SetActive( false);
-		
+		ps.SetActive(false);
+
 	}
 
 	public void OnMouseDown()
 	{
-
+		int index = 0;
+		menus.SetNull(oblist);
 		Debug.Log(imagename);
 		Destroy(ob);
 		Destroy(imagename);
 		ps.SetActive(true);
 
-		foreach (var item in menus.partical)
-		{
-	
-			menus.partical.Remove(item);
-			print("stuf");
+	/*	for (int i = 0; i < menus.partical.Count; i++)
+			{
+			if (menus.partical[i] == null)
+			{
+				print("part is snull");
+				//Destroy(partical[i]);
+				menus.partical.RemoveAt(i);
+			}
 		}
-		tacking.kliks += 1;
-	
-		
-		
+		//tacking.kliks += 1;
+*/
 	}
-
 }
