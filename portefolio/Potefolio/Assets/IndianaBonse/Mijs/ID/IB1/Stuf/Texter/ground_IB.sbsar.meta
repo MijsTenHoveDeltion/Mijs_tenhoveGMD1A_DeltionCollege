@@ -1,0 +1,86 @@
+fileFormatVersion: 2
+guid: 53c7df0e709e7de429e6ef5c04f48314
+ScriptedImporter:
+  fileIDToRecycleName:
+    100000: ground_IB/ground_IB
+    400000: ground_IB/ground_IB/Transform
+    2100000: mat.Ground
+    2300000: ground_IB/ground_IB/MeshRenderer
+    2800000: Ground_baseColor
+    2800002: Ground_normal
+    2800004: Ground_metallic
+    2800006: Ground_height
+    3300000: ground_IB/ground_IB/MeshFilter
+    11400000: sbsar
+    11400002: graph0
+    13500000: ground_IB/ground_IB/SphereCollider
+    100100000: ground_IB
+  externalObjects: {}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 232528478, guid: 43a8bbf65be290d44ba52b94476242b9, type: 3}
+  version: 13
+  mGraphInstanceData:
+  - graphLabel: Ground
+    prototypeName: Ground
+    graphDescIndex: 0
+    generateAllOutputs: 0
+    generateMipMaps: 1
+    preset: " <sbspreset pkgurl=\"pkg://Ground\" label=\"\" >\n </sbspreset>\n"
+    shaderName: Standard
+    outputNames: baseColor,normal,metallic,height
+    texturePackingList:
+    - outputName: baseColor
+      alphaSource: baseColor
+    - outputName: normal
+      alphaSource: normal
+    - outputName: roughness
+      alphaSource: roughness
+    - outputName: metallic
+      alphaSource: smoothness
+    - outputName: height
+      alphaSource: height
+    textureParameters:
+    - textureName: Ground_roughness
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Ground_baseColor
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Ground_normal
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Ground_metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Ground_height
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    colorSpaceList:
+    - outputName: baseColor
+      bLinear: 0
+    - outputName: normal
+      bLinear: 1
+    - outputName: roughness
+      bLinear: 1
+    - outputName: metallic
+      bLinear: 1
+    - outputName: height
+      bLinear: 1
+    inputTextureMap: []
+    targetSettingList:
+    - label: 
+      bLockRatio: 1
+      bHighQuality: 0
+      textureWidth: 0
+      textureHeight: 0
+      textureFormat: 0
+      bGenerateOnLoad: 1
+    material: {instanceID: 0}
+    generatedTextures: []
